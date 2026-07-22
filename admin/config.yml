@@ -57,9 +57,19 @@ collections:
           - { label: "Section 2 — heading", name: "s2_heading", widget: "string" }
           - { label: "Section 2 — body", name: "s2_body", widget: "text" }
           - { label: "Section 2 — photo", name: "s2_photo", widget: "image" }
+          - { label: "Section 2 — checklist", name: "s2_checklist", widget: "list" }
+          - { label: "Our role — checklist", name: "role_checklist", widget: "list" }
+          - label: "Kick-off process — steps"
+            name: "steps"
+            widget: "list"
+            fields:
+              - { label: "Step label", name: "step_no", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
           - { label: "Fit section — eyebrow", name: "fit_eyebrow", widget: "string" }
           - { label: "Fit section — heading", name: "fit_heading", widget: "string" }
           - { label: "Fit section — background photo", name: "fit_photo", widget: "image" }
+          - { label: "Fit section — checklist", name: "fit_checklist", widget: "list" }
           - { label: "Testimonial quote", name: "testimonial_quote", widget: "text" }
           - { label: "Testimonial attribution", name: "testimonial_cite", widget: "string" }
           - { label: "Closing CTA heading", name: "cta_heading", widget: "string" }
@@ -81,9 +91,19 @@ collections:
           - { label: "Sección 2 — titular", name: "s2_heading", widget: "string" }
           - { label: "Sección 2 — texto", name: "s2_body", widget: "text" }
           - { label: "Sección 2 — foto", name: "s2_photo", widget: "image" }
+          - { label: "Sección 2 — checklist", name: "s2_checklist", widget: "list" }
+          - { label: "Nuestro papel — checklist", name: "role_checklist", widget: "list" }
+          - label: "Proceso de arranque — pasos"
+            name: "steps"
+            widget: "list"
+            fields:
+              - { label: "Etiqueta del paso", name: "step_no", widget: "string" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto", name: "body", widget: "text" }
           - { label: "Sección encaje — eyebrow", name: "fit_eyebrow", widget: "string" }
           - { label: "Sección encaje — titular", name: "fit_heading", widget: "string" }
           - { label: "Sección encaje — foto de fondo", name: "fit_photo", widget: "image" }
+          - { label: "Sección encaje — checklist", name: "fit_checklist", widget: "list" }
           - { label: "Cita del testimonio", name: "testimonial_quote", widget: "text" }
           - { label: "Autoría del testimonio", name: "testimonial_cite", widget: "string" }
           - { label: "Titular del CTA final", name: "cta_heading", widget: "string" }
@@ -101,12 +121,22 @@ collections:
           - { label: "Primary button text", name: "cta1_label", widget: "string" }
           - { label: "Secondary button text", name: "cta2_label", widget: "string" }
           - { label: "Hero background video", name: "background_video", widget: "file" }
+          - { label: "The problem — checklist", name: "problem_checklist", widget: "list" }
           - { label: "Section 2 — eyebrow", name: "s2_eyebrow", widget: "string" }
           - { label: "Section 2 — heading", name: "s2_heading", widget: "string" }
           - { label: "Section 2 — photo", name: "s2_photo", widget: "image" }
+          - { label: "Section 2 — checklist", name: "s2_checklist", widget: "list" }
+          - label: "How it works — steps"
+            name: "steps"
+            widget: "list"
+            fields:
+              - { label: "Step label", name: "step_no", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
           - { label: "Section 3 — eyebrow", name: "s3_eyebrow", widget: "string" }
           - { label: "Section 3 — heading", name: "s3_heading", widget: "string" }
           - { label: "Section 3 — photo", name: "s3_photo", widget: "image" }
+          - { label: "Section 3 — checklist", name: "s3_checklist", widget: "list" }
           - { label: "Testimonial quote", name: "testimonial_quote", widget: "text" }
           - { label: "Testimonial attribution", name: "testimonial_cite", widget: "string" }
           - { label: "Closing CTA heading", name: "cta_heading", widget: "string" }
@@ -124,12 +154,22 @@ collections:
           - { label: "Texto botón principal", name: "cta1_label", widget: "string" }
           - { label: "Texto botón secundario", name: "cta2_label", widget: "string" }
           - { label: "Vídeo de fondo del hero", name: "background_video", widget: "file" }
+          - { label: "El problema — checklist", name: "problem_checklist", widget: "list" }
           - { label: "Sección 2 — eyebrow", name: "s2_eyebrow", widget: "string" }
           - { label: "Sección 2 — titular", name: "s2_heading", widget: "string" }
           - { label: "Sección 2 — foto", name: "s2_photo", widget: "image" }
+          - { label: "Sección 2 — checklist", name: "s2_checklist", widget: "list" }
+          - label: "Cómo funciona — pasos"
+            name: "steps"
+            widget: "list"
+            fields:
+              - { label: "Etiqueta del paso", name: "step_no", widget: "string" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto", name: "body", widget: "text" }
           - { label: "Sección 3 — eyebrow", name: "s3_eyebrow", widget: "string" }
           - { label: "Sección 3 — titular", name: "s3_heading", widget: "string" }
           - { label: "Sección 3 — foto", name: "s3_photo", widget: "image" }
+          - { label: "Sección 3 — checklist", name: "s3_checklist", widget: "list" }
           - { label: "Cita del testimonio", name: "testimonial_quote", widget: "text" }
           - { label: "Autoría del testimonio", name: "testimonial_cite", widget: "string" }
           - { label: "Titular del CTA final", name: "cta_heading", widget: "string" }
@@ -145,6 +185,15 @@ collections:
           - { label: "Hero headline", name: "headline", widget: "string" }
           - { label: "Hero subtitle", name: "lede", widget: "text" }
           - { label: "Hero background video", name: "background_video", widget: "file" }
+          - label: "Teams"
+            name: "teams"
+            widget: "list"
+            fields:
+              - { label: "Photo", name: "photo", widget: "image" }
+              - { label: "Accent color", name: "color", widget: "string" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Nickname", name: "nickname", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
           - { label: "Closing CTA heading", name: "cta_heading", widget: "string" }
 
   - name: "how_we_work_es"
@@ -158,6 +207,15 @@ collections:
           - { label: "Titular del hero", name: "headline", widget: "string" }
           - { label: "Subtítulo del hero", name: "lede", widget: "text" }
           - { label: "Vídeo de fondo del hero", name: "background_video", widget: "file" }
+          - label: "Equipos"
+            name: "teams"
+            widget: "list"
+            fields:
+              - { label: "Foto", name: "photo", widget: "image" }
+              - { label: "Color de acento", name: "color", widget: "string" }
+              - { label: "Nombre", name: "name", widget: "string" }
+              - { label: "Apodo", name: "nickname", widget: "string" }
+              - { label: "Descripción", name: "description", widget: "text" }
           - { label: "Titular del CTA final", name: "cta_heading", widget: "string" }
 
   - name: "hotel_network_en"
@@ -173,6 +231,7 @@ collections:
           - { label: "Section 2 — eyebrow", name: "s2_eyebrow", widget: "string" }
           - { label: "Section 2 — heading", name: "s2_heading", widget: "string" }
           - { label: "Section 2 — background video", name: "s2_background_video", widget: "file" }
+          - { label: "Section 2 — checklist", name: "s2_checklist", widget: "list" }
           - { label: "Closing CTA heading", name: "cta_heading", widget: "string" }
 
   - name: "hotel_network_es"
@@ -188,6 +247,7 @@ collections:
           - { label: "Sección 2 — eyebrow", name: "s2_eyebrow", widget: "string" }
           - { label: "Sección 2 — titular", name: "s2_heading", widget: "string" }
           - { label: "Sección 2 — vídeo de fondo", name: "s2_background_video", widget: "file" }
+          - { label: "Sección 2 — checklist", name: "s2_checklist", widget: "list" }
           - { label: "Titular del CTA final", name: "cta_heading", widget: "string" }
 
   - name: "events_en"
@@ -201,6 +261,18 @@ collections:
           - { label: "Hero headline", name: "headline", widget: "string" }
           - { label: "Hero subtitle", name: "lede", widget: "text" }
           - { label: "Hero background video", name: "background_video", widget: "file" }
+          - label: "Events"
+            name: "events"
+            widget: "list"
+            fields:
+              - { label: "Date — day/range", name: "day", widget: "string" }
+              - { label: "Date — month/year", name: "month", widget: "string" }
+              - { label: "Logo type", name: "logo_type", widget: "select", options: ["image", "text"], default: "image" }
+              - { label: "Logo image", name: "logo", widget: "image", required: false }
+              - { label: "Logo fallback text (if no image)", name: "logo_text", widget: "string", required: false }
+              - { label: "Dark logo box", name: "logo_dark", widget: "boolean", default: false }
+              - { label: "Event name", name: "name", widget: "string" }
+              - { label: "City", name: "city", widget: "string" }
           - { label: "Closing CTA heading", name: "cta_heading", widget: "string" }
 
   - name: "events_es"
@@ -214,6 +286,18 @@ collections:
           - { label: "Titular del hero", name: "headline", widget: "string" }
           - { label: "Subtítulo del hero", name: "lede", widget: "text" }
           - { label: "Vídeo de fondo del hero", name: "background_video", widget: "file" }
+          - label: "Eventos"
+            name: "events"
+            widget: "list"
+            fields:
+              - { label: "Fecha — día/rango", name: "day", widget: "string" }
+              - { label: "Fecha — mes/año", name: "month", widget: "string" }
+              - { label: "Tipo de logo", name: "logo_type", widget: "select", options: ["image", "text"], default: "image" }
+              - { label: "Logo (imagen)", name: "logo", widget: "image", required: false }
+              - { label: "Texto alternativo (si no hay imagen)", name: "logo_text", widget: "string", required: false }
+              - { label: "Caja de logo oscura", name: "logo_dark", widget: "boolean", default: false }
+              - { label: "Nombre del evento", name: "name", widget: "string" }
+              - { label: "Ciudad", name: "city", widget: "string" }
           - { label: "Titular del CTA final", name: "cta_heading", widget: "string" }
 
   - name: "about_en"

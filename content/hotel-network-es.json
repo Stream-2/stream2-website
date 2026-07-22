@@ -5,5 +5,11 @@
   "s2_eyebrow": "Qué significa \"seleccionado\"",
   "s2_heading": "Cada hotel partner cumple un estándar claro",
   "s2_background_video": "/assets/video/Pasillo2.mp4",
+  "s2_checklist": [
+    "Valoración online estable de 7,5+",
+    "Más de 80 habitaciones con buena capacidad doble",
+    "Política de precios de grupo estructurada",
+    "Opción de cena / media pensión y accesibilidad para autocares"
+  ],
   "cta_heading": "¿Eres un hotel o buscas hoteles?"
 }

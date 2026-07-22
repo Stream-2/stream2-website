@@ -3,5 +3,17 @@
   "headline": "Nos vemos en persona.",
   "lede": "Nuestra presencia en los eventos internacionales clave nos permite ampliar la red y obtener información de mercado en tiempo real — para seguir ofreciendo las soluciones más precisas para tus grupos.",
   "background_video": "/assets/video/Evento.mp4",
+  "events": [
+    { "day": "02–04", "month": "sep 2026", "logo_type": "image", "logo": "/assets/img/events/itb-india.jpg", "logo_dark": false, "name": "ITB India", "city": "Bombay" },
+    { "day": "02–04", "month": "sep 2026", "logo_type": "image", "logo": "/assets/img/events/bltm-india.png", "logo_dark": true, "name": "BLTM India", "city": "Delhi" },
+    { "day": "23–25", "month": "sep 2026", "logo_type": "image", "logo": "/assets/img/events/iftm-top-resa.png", "logo_dark": false, "name": "IFTM Top Resa", "city": "París" },
+    { "day": "05–08", "month": "oct 2026", "logo_type": "text", "logo_text": "BUY veneto", "logo_dark": false, "name": "BUY Veneto", "city": "Véneto" },
+    { "day": "14–16", "month": "oct 2026", "logo_type": "image", "logo": "/assets/img/events/ttg-travel-experience.svg", "logo_dark": true, "name": "TTG Travel Experience", "city": "Rímini" },
+    { "day": "03", "month": "nov 2026", "logo_type": "image", "logo": "/assets/img/events/gem-london.svg", "logo_dark": false, "name": "GEM London", "city": "Londres" },
+    { "day": "03–05", "month": "nov 2026", "logo_type": "image", "logo": "/assets/img/events/wtm-london.png", "logo_dark": true, "name": "WTM London", "city": "Londres" },
+    { "day": "17–19", "month": "nov 2026", "logo_type": "image", "logo": "/assets/img/events/ibtm-world.png", "logo_dark": true, "name": "IBTM World", "city": "Barcelona" },
+    { "day": "20–24", "month": "ene 2027", "logo_type": "image", "logo": "/assets/img/events/fitur.svg", "logo_dark": false, "name": "FITUR", "city": "Madrid" },
+    { "day": "16–18", "month": "mar 2027", "logo_type": "image", "logo": "/assets/img/events/itb-berlin.svg", "logo_dark": false, "name": "ITB Berlín", "city": "Berlín" }
+  ],
   "cta_heading": "Únete a nosotros en un próximo evento — construyamos juntos el futuro de la hostelería."
 }

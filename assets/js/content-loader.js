@@ -28,6 +28,58 @@ function applyContent(data) {
       el.setAttribute("href", data[hrefField]);
     }
   });
+
+  document.querySelectorAll("[data-cms-list]").forEach(function (el) {
+    var key = el.getAttribute("data-cms-list");
+    var type = el.getAttribute("data-cms-list-type") || "checklist";
+    var items = data[key];
+    if (Array.isArray(items)) renderList(el, items, type);
+  });
+}
+
+// Rebuilds a repeating block of markup from a JSON array. Each "type" mirrors one
+// repeating structure already in the page's CSS (check-list, step-grid, team cards,
+// event rows) — kept as small dedicated templates rather than one generic template
+// engine, since each structure's markup genuinely differs.
+function renderList(container, items, type) {
+  container.innerHTML = items
+    .map(function (item) {
+      switch (type) {
+        case "checklist":
+          return "<li>" + escapeHtml(item) + "</li>";
+
+        case "steps":
+          return (
+            '<div class="step"><span class="step-no">' + escapeHtml(item.step_no) + "</span><h3>" +
+            escapeHtml(item.title) + "</h3><p>" + escapeHtml(item.body) + "</p></div>"
+          );
+
+        case "teams":
+          return (
+            '<div class="card has-photo" style="--accent-card:' + escapeHtml(item.color) + ';">' +
+            '<img class="card-photo" src="' + escapeHtml(item.photo) + '" alt="' + escapeHtml(item.name) + '" loading="lazy" />' +
+            '<div class="card-body"><h3>' + escapeHtml(item.name) + ' — <span class="card-nickname">"' +
+            escapeHtml(item.nickname) + '"</span></h3><p>' + escapeHtml(item.description) + "</p></div></div>"
+          );
+
+        case "events":
+          var logoHtml =
+            item.logo_type === "text"
+              ? '<div class="event-logo-box text-fallback">' + escapeHtml(item.logo_text) + "</div>"
+              : '<div class="event-logo-box' + (item.logo_dark ? " dark" : "") + '">' +
+                '<img src="' + escapeHtml(item.logo) + '" alt="' + escapeHtml(item.name) + '" loading="lazy" /></div>';
+          return (
+            '<div class="event-row"><div class="event-date"><span class="event-day">' + escapeHtml(item.day) +
+            '</span><span class="event-month">' + escapeHtml(item.month) + "</span></div>" + logoHtml +
+            '<div class="event-info"><strong>' + escapeHtml(item.name) + "</strong><span>" +
+            escapeHtml(item.city) + "</span></div></div>"
+          );
+
+        default:
+          return "";
+      }
+    })
+    .join("");
 }
 
 document.addEventListener("DOMContentLoaded", function () {

@@ -9,9 +9,36 @@
   "s2_heading": "Groups build your foundation",
   "s2_body": "Hotels without a group focus lose structural market share. Leisure groups are the quiet engine behind base occupancy.",
   "s2_photo": "/assets/img/photos/hotel-facade.jpg",
+  "s2_checklist": [
+    "30–35% revenue contribution",
+    "Reduced occupancy volatility",
+    "Support pricing strategy",
+    "Protected low-season performance"
+  ],
+  "role_checklist": [
+    "We represent your hotel in key leisure source markets",
+    "We negotiate and qualify requests on your behalf",
+    "We act with the mindset of an in-house sales team",
+    "You maintain full control over pricing and acceptance"
+  ],
+  "steps": [
+    { "step_no": "STEP 1 · ONBOARDING", "title": "Understand", "body": "We understand your positioning, target markets and priorities." },
+    { "step_no": "STEP 2 · ALIGNMENT", "title": "Agree", "body": "We agree on indication rates, communication flows & guidelines." },
+    { "step_no": "STEP 3 · ACTIVATION", "title": "Sell", "body": "We activate demand and match the right business to your hotel." },
+    { "step_no": "STEP 4 · RESULTS", "title": "Grow", "body": "Optimised pipeline, predictable conversions, continuous growth." }
+  ],
   "fit_eyebrow": "Partnership fit",
   "fit_heading": "Is your hotel a fit?",
   "fit_photo": "/assets/img/photos/key-handoff.jpg",
+  "fit_checklist": [
+    "Consistent online rating of 7.5+",
+    "80+ rooms with strong twin capacity",
+    "Structured group pricing",
+    "Dinner / half-board options",
+    "Coach accessibility",
+    "Ambition to grow an international leisure base",
+    "Long-term partnership mindset"
+  ],
   "testimonial_quote": "\"We've kept full control over our rates and acceptance criteria from day one — Stream2 simply brings us the right groups, at the right time. It feels like having our own international sales desk, without the overhead.\"",
   "testimonial_cite": "Revenue Manager, 4-star Hotel, Amsterdam",
   "cta_heading": "Let's talk about your hotel's group strategy."

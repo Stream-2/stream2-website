@@ -9,9 +9,36 @@
   "s2_heading": "Los grupos construyen tu base",
   "s2_body": "Los hoteles sin foco en grupos pierden cuota de mercado estructural. Los grupos de ocio son el motor silencioso de la ocupación base.",
   "s2_photo": "/assets/img/photos/hotel-facade.jpg",
+  "s2_checklist": [
+    "30–35% de contribución a ingresos",
+    "Menor volatilidad de ocupación",
+    "Mejor estrategia de precios",
+    "Protección en temporada baja"
+  ],
+  "role_checklist": [
+    "Representamos a tu hotel en los mercados emisores de ocio clave",
+    "Negociamos y cualificamos las solicitudes en tu nombre",
+    "Actuamos con la mentalidad de un equipo comercial interno",
+    "Mantienes siempre el control total sobre precios y aceptación"
+  ],
+  "steps": [
+    { "step_no": "PASO 1 · ONBOARDING", "title": "Entender", "body": "Entendemos tu posicionamiento, mercados objetivo y prioridades." },
+    { "step_no": "PASO 2 · ALINEACIÓN", "title": "Acordar", "body": "Acordamos tarifas de referencia, flujos de comunicación y pautas." },
+    { "step_no": "PASO 3 · ACTIVACIÓN", "title": "Vender", "body": "Activamos la demanda y encajamos el negocio correcto con tu hotel." },
+    { "step_no": "PASO 4 · RESULTADOS", "title": "Crecer", "body": "Pipeline optimizado, conversión predecible, crecimiento continuo." }
+  ],
   "fit_eyebrow": "Encaje de colaboración",
   "fit_heading": "¿Tu hotel encaja?",
   "fit_photo": "/assets/img/photos/key-handoff.jpg",
+  "fit_checklist": [
+    "Valoración online estable de 7,5+",
+    "Más de 80 habitaciones con buena capacidad doble",
+    "Política de precios de grupo estructurada",
+    "Opción de cena / media pensión",
+    "Accesibilidad para autocares",
+    "Ambición de crecer en base internacional de ocio",
+    "Mentalidad de colaboración a largo plazo"
+  ],
   "testimonial_quote": "\"Hemos mantenido el control total sobre nuestras tarifas y criterios de aceptación desde el primer día — Stream2 simplemente nos trae los grupos adecuados, en el momento adecuado. Es como tener nuestro propio departamento comercial internacional, sin el coste fijo.\"",
   "testimonial_cite": "Revenue Manager, hotel 4 estrellas, Ámsterdam",
   "cta_heading": "Hablemos de la estrategia de grupos de tu hotel."

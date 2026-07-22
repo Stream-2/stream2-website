@@ -3,5 +3,12 @@
   "headline": "Un mismo proceso, adaptado al lado de la mesa en el que estés.",
   "lede": "Ya seas un hotel o un organizador de viajes, los mismos equipos especializados y la misma disciplina están detrás de cada grupo que colocamos.",
   "background_video": "/assets/video/Ascensor.mp4",
+  "teams": [
+    { "photo": "/assets/img/canva/team-series.jpg", "color": "#0b3d5c", "name": "Team Series", "nickname": "Misión → Posible", "description": "Tus especialistas en series. Desde la primera disponibilidad hasta el contrato final; directo, estructurado y gestionado por completo. Mantienen tu pipeline predecible, año tras año." },
+    { "photo": "/assets/img/canva/team-adhoc.jpg", "color": "#b5652f", "name": "Team Ad-hoc", "nickname": "Leyendas de última hora", "description": "Más de 300 grupos cualificados al mes, +70% de conversión, contrato directo, respuesta rápida." },
+    { "photo": "/assets/img/canva/team-asia.jpg", "color": "#2f6f5e", "name": "Team Asia", "nickname": "Sinergia Este-Oeste", "description": "100% enfocado en mercados asiáticos. Idioma nativo, comprensión cultural genuina, relaciones hoteleras directas ya establecidas." },
+    { "photo": "/assets/img/canva/team-operations.jpg", "color": "#a68a2e", "name": "Team Operations", "nickname": "Motor de rendimiento", "description": "Contratos, finanzas, seguimiento e informes. Cada detalle, cada plazo, con control estricto de KPI." },
+    { "photo": "/assets/img/canva/team-product.jpg", "color": "#7a3b5e", "name": "Team Product", "nickname": "Arquitectos de la alianza", "description": "Mantienen afiladas nuestras alianzas hoteleras directas — monitorizan el rendimiento y trasladan las necesidades del mercado a cada relación." }
+  ],
   "cta_heading": "¿Listo para ver el proceso en acción?"
 }

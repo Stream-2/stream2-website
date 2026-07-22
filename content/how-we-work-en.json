@@ -3,5 +3,12 @@
   "headline": "One process, built around whichever side of the table you're on.",
   "lede": "Whether you're a hotel or a travel organiser, the same specialist teams and the same discipline sit behind every group we place.",
   "background_video": "/assets/video/Ascensor.mp4",
+  "teams": [
+    { "photo": "/assets/img/canva/team-series.jpg", "color": "#0b3d5c", "name": "Team Series", "nickname": "Mission → Possible", "description": "Your series specialists. From first availability to final contract; direct, structured and fully managed. They keep your pipeline predictable, year after year." },
+    { "photo": "/assets/img/canva/team-adhoc.jpg", "color": "#b5652f", "name": "Team Ad-hoc", "nickname": "Last-minute legends", "description": "300+ qualified groups a month, 70%+ conversion, direct contracts, fast turnaround." },
+    { "photo": "/assets/img/canva/team-asia.jpg", "color": "#2f6f5e", "name": "Team Asia", "nickname": "EastWest synergy", "description": "100% focused on Asian markets. Native language, genuine cultural understanding, direct hotel relationships already in place." },
+    { "photo": "/assets/img/canva/team-operations.jpg", "color": "#a68a2e", "name": "Team Operations", "nickname": "Performance engine", "description": "Contracts, finance, follow-up and reporting. Every detail, every deadline, with strict KPI oversight." },
+    { "photo": "/assets/img/canva/team-product.jpg", "color": "#7a3b5e", "name": "Team Product", "nickname": "Alliance architects", "description": "They keep our direct hotel partnerships sharp — monitoring performance and feeding market needs back into every relationship." }
+  ],
   "cta_heading": "Ready to see the process in action?"
 }

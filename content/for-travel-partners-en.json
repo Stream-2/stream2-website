@@ -5,12 +5,37 @@
   "cta1_label": "Send us your hotel requirements →",
   "cta2_label": "Explore our European hotel coverage →",
   "background_video": "/assets/video/Lllamada.mp4",
+  "problem_checklist": [
+    "High hotel staff turnover means slower response times",
+    "Revenue-driven decisions, not relationship-driven",
+    "More contacts, less consistency",
+    "Less long-term strategic thinking"
+  ],
   "s2_eyebrow": "The Stream2 way",
   "s2_heading": "We don't knock on doors. We already have the keys.",
   "s2_photo": "/assets/img/photos/key-card-marble.jpg",
+  "s2_checklist": [
+    "Access to 600+ selected group hotels across Europe",
+    "Embedded in every hotel, from front desk to ownership level",
+    "Maximum 2 dedicated contacts",
+    "We speak your language",
+    "Ad-hoc response in 1–2 days, series within 7 working days",
+    "Direct contracts, always"
+  ],
+  "steps": [
+    { "step_no": "1 · HOTEL DETAILS", "title": "Tell us the brief", "body": "Type, star rating, destination, location preference." },
+    { "step_no": "2 · YOUR NEEDS", "title": "Set the target", "body": "Target rate, dinner yes/no, special requirements, option required." },
+    { "step_no": "3 · YOUR GROUP", "title": "Share the context", "body": "Already sold or still being quoted, expected conversion for series." },
+    { "step_no": "4 · WE DELIVER", "title": "Done", "body": "The right hotel, the best offer, direct contract." }
+  ],
   "s3_eyebrow": "Less complexity, your gain",
   "s3_heading": "What you get, working with one contact",
   "s3_photo": "/assets/img/photos/efficient-workspace.jpg",
+  "s3_checklist": [
+    "Up to 50% less time spent on hotel contracting",
+    "One contact instead of dozens of follow-ups",
+    "Native negotiation in 12 languages"
+  ],
   "testimonial_quote": "\"Stream2 gives us one contact for hotel contracting instead of dozens. It's cut our sourcing time significantly, and the contracts always come directly from the hotel.\"",
   "testimonial_cite": "Contracting Manager, Top 3 Spanish Tour Operator",
   "cta_heading": "Discuss your upcoming programmes."

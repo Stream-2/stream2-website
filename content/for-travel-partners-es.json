@@ -5,12 +5,37 @@
   "cta1_label": "Envíanos tus necesidades hoteleras →",
   "cta2_label": "Explora nuestra cobertura hotelera europea →",
   "background_video": "/assets/video/Lllamada.mp4",
+  "problem_checklist": [
+    "La alta rotación de personal en hoteles ralentiza las respuestas",
+    "Decisiones guiadas por ingresos, no por relación",
+    "Más contactos, menos consistencia",
+    "Menos pensamiento estratégico a largo plazo"
+  ],
   "s2_eyebrow": "La forma Stream2",
   "s2_heading": "No llamamos a las puertas. Ya tenemos las llaves.",
   "s2_photo": "/assets/img/photos/key-card-marble.jpg",
+  "s2_checklist": [
+    "Acceso a más de 600 hoteles seleccionados para grupos en toda Europa",
+    "Presencia real en cada hotel, desde recepción hasta propiedad",
+    "Máximo 2 contactos dedicados",
+    "Hablamos tu idioma",
+    "Respuesta ad-hoc en 1-2 días, series en 7 días laborables",
+    "Contrato directo, siempre"
+  ],
+  "steps": [
+    { "step_no": "1 · DATOS DEL HOTEL", "title": "Cuéntanos el brief", "body": "Tipo, categoría, destino, preferencia de ubicación." },
+    { "step_no": "2 · TUS NECESIDADES", "title": "Define el objetivo", "body": "Tarifa objetivo, cena sí/no, requisitos especiales, opción necesaria." },
+    { "step_no": "3 · TU GRUPO", "title": "Comparte el contexto", "body": "Ya vendido o aún en presupuesto, conversión esperada para series." },
+    { "step_no": "4 · ENTREGAMOS", "title": "Listo", "body": "El hotel adecuado, la mejor oferta, contrato directo." }
+  ],
   "s3_eyebrow": "Menos complejidad, más ganancia",
   "s3_heading": "Lo que consigues trabajando con un solo contacto",
   "s3_photo": "/assets/img/photos/efficient-workspace.jpg",
+  "s3_checklist": [
+    "Hasta un 50% menos de tiempo dedicado a contratación hotelera",
+    "Un solo contacto en vez de decenas de seguimientos",
+    "Negociación nativa en 12 idiomas"
+  ],
   "testimonial_quote": "\"Stream2 nos da un único contacto para la contratación hotelera, en vez de decenas. Ha reducido mucho nuestro tiempo de búsqueda, y los contratos siempre llegan directamente del hotel.\"",
   "testimonial_cite": "Responsable de Contratación, Top 3 turoperador español",
   "cta_heading": "Háblanos de tus próximos programas."
