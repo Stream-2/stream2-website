@@ -4,6 +4,12 @@
 // serves "/contact", Netlify's pretty-URLs can do the same, a raw file server won't.
 // Comparing everything in this stripped form keeps nav/lang-switch correct on any of them.
 
+// Netlify Identity invite/recovery/confirmation links always point at the site root,
+// but the widget that handles them only lives on /admin/ — bounce there, keeping the token.
+if (/(invite_token|recovery_token|confirmation_token|email_change_token)=/.test(location.hash) && !location.pathname.startsWith("/admin")) {
+  location.replace("/admin/" + location.hash);
+}
+
 const PAGE_MAP = {
   "/": "/es/index.html",
   "/for-hotels": "/es/para-hoteles.html",
