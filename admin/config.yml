@@ -1,0 +1,41 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/img/uploads"
+public_folder: "/assets/img/uploads"
+
+collections:
+  - name: "home_en"
+    label: "Home (English)"
+    files:
+      - name: "home_en"
+        label: "Home — Hero"
+        file: "content/home-en.json"
+        fields:
+          - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+          - { label: "Headline — line 1", name: "headline_line1", widget: "string" }
+          - { label: "Headline — line 2", name: "headline_line2", widget: "string" }
+          - { label: "Subtitle", name: "lede", widget: "text" }
+          - { label: "Primary button text", name: "cta1_label", widget: "string" }
+          - { label: "Primary button link", name: "cta1_href", widget: "string" }
+          - { label: "Secondary button text", name: "cta2_label", widget: "string" }
+          - { label: "Secondary button link", name: "cta2_href", widget: "string" }
+          - { label: "Background video or image", name: "background_video", widget: "file" }
+
+  - name: "home_es"
+    label: "Inicio (Español)"
+    files:
+      - name: "home_es"
+        label: "Inicio — Hero"
+        file: "content/home-es.json"
+        fields:
+          - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+          - { label: "Titular — línea 1", name: "headline_line1", widget: "string" }
+          - { label: "Titular — línea 2", name: "headline_line2", widget: "string" }
+          - { label: "Subtítulo", name: "lede", widget: "text" }
+          - { label: "Texto botón principal", name: "cta1_label", widget: "string" }
+          - { label: "Enlace botón principal", name: "cta1_href", widget: "string" }
+          - { label: "Texto botón secundario", name: "cta2_label", widget: "string" }
+          - { label: "Enlace botón secundario", name: "cta2_href", widget: "string" }
+          - { label: "Vídeo o imagen de fondo", name: "background_video", widget: "file" }
