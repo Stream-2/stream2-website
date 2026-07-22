@@ -1,0 +1,113 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow" />
+<script src="/assets/js/gate.js"></script>
+<meta charset="utf-8" />
+<link rel="icon" href="/assets/img/stream2-logo-color.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact | Stream2</title>
+<meta name="description" content="Tell us whether you're a hotel or a travel organiser — we'll route you to the right team. Offices in The Hague, Netherlands and Madrid, Spain." />
+<link rel="canonical" href="https://www.stream2.nl/contact.html" />
+<link rel="alternate" hreflang="en" href="https://www.stream2.nl/contact.html" />
+<link rel="alternate" hreflang="es" href="https://www.stream2.nl/es/contacto.html" />
+<link rel="alternate" hreflang="x-default" href="https://www.stream2.nl/contact.html" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:SOFT,WONK,opsz,wght@0,0,9..144,300..700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+<div data-include="/assets/partials/header-en.html"></div>
+
+<section class="hero">
+  <div class="container">
+    <span class="eyebrow">Contact</span>
+    <h1>Let's talk about your next group.</h1>
+    <p class="lede">Tell us whether you're a hotel or a travel organiser — we'll route you to the right team. We reply within 24 hours.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container grid grid-2" style="align-items:start; gap:48px;">
+    <div>
+      <div class="form-tabs">
+        <button class="form-tab active" data-target="form-hotel">I'm a hotel</button>
+        <button class="form-tab" data-target="form-travel">I'm a travel organiser</button>
+      </div>
+
+      <div class="form-success" id="success-hotel">Thank you — your message is with the right team. We reply within 24 hours.</div>
+      <form id="form-hotel" name="hotel-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form active grid form-grid">
+        <input type="hidden" name="form-name" value="hotel-inquiry" />
+        <p style="display:none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
+        <div class="field"><label for="h-first">First name *</label><input id="h-first" name="first_name" required /></div>
+        <div class="field"><label for="h-last">Last name *</label><input id="h-last" name="last_name" required /></div>
+        <div class="field"><label for="h-hotel">Hotel / group *</label><input id="h-hotel" name="hotel" required /></div>
+        <div class="field"><label for="h-role">Role *</label><input id="h-role" name="role" required /></div>
+        <div class="field"><label for="h-email">Email *</label><input id="h-email" type="email" name="email" required /></div>
+        <div class="field"><label for="h-phone">Phone *</label><input id="h-phone" type="tel" name="phone" required /></div>
+        <div class="field"><label for="h-country">Country *</label><input id="h-country" name="country" required /></div>
+        <div class="field"><label for="h-city">City *</label><input id="h-city" name="city" required /></div>
+        <div class="field"><label for="h-rooms">Number of rooms *</label><input id="h-rooms" type="number" name="rooms" required /></div>
+        <div class="field"><label for="h-business">Type of group business you're looking for</label><input id="h-business" name="business_type" /></div>
+        <div class="field full"><label for="h-message">Message *</label><textarea id="h-message" name="message" rows="4" required></textarea></div>
+        <p class="field full consent-info"><strong>Basic information on data protection.</strong> Responsible: STREAM2 ESPAÑA, S.L. Purpose: to process this enquiry and, with your consent, send commercial communications. Legitimacy: your consent and our legitimate interest. Recipients: none, beyond those strictly necessary for our business activity. Rights: access, rectify and delete your data, among others. <a href="/privacy-policy.html">+ info</a></p>
+        <div class="field full consent"><input type="checkbox" id="h-consent" required /><label for="h-consent">I agree to Stream2 processing my data to respond to this enquiry, in line with the <a href="/privacy-policy.html">Privacy Policy</a>. *</label></div>
+        <div class="field full"><button class="btn btn-primary" type="submit">Explore a hotel partnership →</button></div>
+      </form>
+
+      <div class="form-success" id="success-travel">Thank you — your message is with the right team. We reply within 24 hours.</div>
+      <form id="form-travel" name="travel-partner-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form grid form-grid">
+        <input type="hidden" name="form-name" value="travel-partner-inquiry" />
+        <p style="display:none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
+        <div class="field"><label for="t-name">Name *</label><input id="t-name" name="name" required /></div>
+        <div class="field"><label for="t-company">Company *</label><input id="t-company" name="company" required /></div>
+        <div class="field"><label for="t-role">Role</label><input id="t-role" name="role" /></div>
+        <div class="field"><label for="t-email">Email *</label><input id="t-email" type="email" name="email" required /></div>
+        <div class="field"><label for="t-country">Country *</label><input id="t-country" name="country" required /></div>
+        <div class="field"><label for="t-destinations">Destination(s) *</label><input id="t-destinations" name="destinations" required /></div>
+        <div class="field">
+          <label for="t-size">Group size *</label>
+          <select id="t-size" name="group_size" required>
+            <option value="">Select…</option>
+            <option>2–10 persons</option><option>11–20 persons</option><option>21–50 persons</option><option>51–100 persons</option><option>100+ persons</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="t-type">Type of request *</label>
+          <select id="t-type" name="request_type" required>
+            <option value="">Select…</option>
+            <option>Ad-hoc group</option><option>Group series</option><option>Other leisure group</option>
+          </select>
+        </div>
+        <div class="field"><label for="t-date">Approximate date</label><input id="t-date" type="text" name="date" placeholder="e.g. June 2027" /></div>
+        <div class="field"><label for="t-rate">Target rate</label><input id="t-rate" name="target_rate" /></div>
+        <div class="field full"><label for="t-message">Message *</label><textarea id="t-message" name="message" rows="4" required></textarea></div>
+        <p class="field full consent-info"><strong>Basic information on data protection.</strong> Responsible: STREAM2 ESPAÑA, S.L. Purpose: to process this enquiry and, with your consent, send commercial communications. Legitimacy: your consent and our legitimate interest. Recipients: none, beyond those strictly necessary for our business activity. Rights: access, rectify and delete your data, among others. <a href="/privacy-policy.html">+ info</a></p>
+        <div class="field full consent"><input type="checkbox" id="t-consent" required /><label for="t-consent">I agree to Stream2 processing my data to respond to this enquiry, in line with the <a href="/privacy-policy.html">Privacy Policy</a>. *</label></div>
+        <div class="field full"><button class="btn btn-primary" type="submit">Send us your hotel requirements →</button></div>
+      </form>
+      <p class="form-note">Prefer to talk? Call +34 615 522 515 or book a call once you reach out — we'll suggest times.</p>
+    </div>
+
+    <div class="hero-split-photo" style="margin-bottom:22px;"><img src="/assets/img/photos/travel-agency.jpg" alt="Travel agency team at work" /></div>
+    <div class="office-grid" style="grid-column:auto;">
+      <div class="card">
+        <h3>Office Benelux</h3>
+        <p>P.O. Box 42079<br />2504 BE The Hague<br />The Netherlands</p>
+        <p><a href="tel:+31702500092">+31 70 250 0092</a><br /><a href="mailto:info@stream2.nl">info@stream2.nl</a></p>
+      </div>
+      <div class="card">
+        <h3>Office Spain</h3>
+        <p>Calle Santa Engracia 108, 6º Int. Izq.<br />28003 Madrid<br />España</p>
+        <p><a href="tel:+34615522515">+34 615 522 515</a><br /><a href="mailto:info@stream2.es">info@stream2.es</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div data-include="/assets/partials/footer-en.html"></div>
+<script src="/assets/js/include.js"></script>
+<script src="/assets/js/cookie-consent.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "note": "Country-level aggregate only — no hotel names, no exact addresses. Source: Stream2 internal hotel database, captured 2026-07-15. Refresh quarterly; see proposal Fase 6.6.",
+  "countries": [
+    { "name": "Germany", "count": 698, "lat": 52.5200, "lon": 13.4050 },
+    { "name": "France", "count": 366, "lat": 48.8566, "lon": 2.3522 },
+    { "name": "Netherlands", "count": 322, "lat": 52.3676, "lon": 4.9041 },
+    { "name": "Spain", "count": 196, "lat": 40.4168, "lon": -3.7038 },
+    { "name": "Italy", "count": 146, "lat": 41.9028, "lon": 12.4964 },
+    { "name": "Austria", "count": 120, "lat": 48.2082, "lon": 16.3738 },
+    { "name": "Belgium", "count": 108, "lat": 50.8503, "lon": 4.3517 },
+    { "name": "Switzerland", "count": 72, "lat": 46.9480, "lon": 7.4474 },
+    { "name": "Portugal", "count": 63, "lat": 38.7223, "lon": -9.1393 },
+    { "name": "United Kingdom", "count": 55, "lat": 51.5074, "lon": -0.1278 },
+    { "name": "Czechia", "count": 47, "lat": 50.0755, "lon": 14.4378 },
+    { "name": "Hungary", "count": 43, "lat": 47.4979, "lon": 19.0402 },
+    { "name": "Sweden", "count": 30, "lat": 59.3293, "lon": 18.0686 },
+    { "name": "Poland", "count": 10, "lat": 52.2297, "lon": 21.0122 },
+    { "name": "Denmark", "count": 5, "lat": 55.6761, "lon": 12.5683 },
+    { "name": "Croatia", "count": 5, "lat": 45.8150, "lon": 15.9819 },
+    { "name": "Slovakia", "count": 5, "lat": 48.1486, "lon": 17.1077 },
+    { "name": "Ireland", "count": 3, "lat": 53.3498, "lon": -6.2603 },
+    { "name": "Greece", "count": 2, "lat": 37.9838, "lon": 23.7275 },
+    { "name": "Luxembourg", "count": 2, "lat": 49.6116, "lon": 6.1319 },
+    { "name": "Norway", "count": 2, "lat": 59.9139, "lon": 10.7522 },
+    { "name": "Romania", "count": 2, "lat": 44.4268, "lon": 26.1025 },
+    { "name": "Slovenia", "count": 1, "lat": 46.0569, "lon": 14.5058 },
+    { "name": "Finland", "count": 1, "lat": 60.1699, "lon": 24.9384 },
+    { "name": "Malta", "count": 4, "lat": 35.8989, "lon": 14.5146 }
+  ],
+  "beyondEurope": ["Morocco", "Russia", "Mozambique"]
+}
