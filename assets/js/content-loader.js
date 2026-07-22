@@ -87,10 +87,10 @@ function renderList(container, items, type) {
               "</div>";
           }
           return (
-            '<div class="event-row"><div class="event-main"><div class="event-date"><span class="event-day">' +
+            '<div class="event-row"><div class="event-date"><span class="event-day">' +
             escapeHtml(item.day) + '</span><span class="event-month">' + escapeHtml(item.month) + "</span></div>" +
             logoHtml + '<div class="event-info"><strong>' + escapeHtml(item.name) + "</strong><span>" +
-            escapeHtml(item.city) + "</span></div></div>" + attendeesHtml + "</div>"
+            escapeHtml(item.city) + "</span></div>" + attendeesHtml + "</div>"
           );
 
         default:

@@ -219,8 +219,7 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--brand); out
 .office-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
 
 /* ---------- Events ---------- */
-.event-row { display: flex; flex-direction: column; gap: 18px; padding: 26px 0; border-bottom: 1px solid var(--line); }
-.event-main { display: flex; align-items: center; gap: 28px; }
+.event-row { display: flex; align-items: center; gap: 24px; padding: 26px 0; border-bottom: 1px solid var(--line); }
 .event-date { flex: none; width: 150px; display: flex; align-items: baseline; gap: 10px; padding-right: 24px; border-right: 1px solid var(--line); }
 .event-day { display: block; font-family: "Fraunces", Georgia, serif; font-variation-settings: "SOFT" 40, "WONK" 0; font-size: 1.4rem; font-weight: 600; color: var(--brand); line-height: 1; white-space: nowrap; }
 .event-month { display: block; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); white-space: nowrap; }
@@ -229,18 +228,20 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--brand); out
 .event-logo-box img { max-width: 100%; max-height: 100%; object-fit: contain; filter: grayscale(1); opacity: 0.75; transition: filter 0.3s ease, opacity 0.3s ease; }
 .event-row:hover .event-logo-box img { filter: grayscale(0); opacity: 1; }
 .event-logo-box.text-fallback { font-weight: 800; font-size: 0.72rem; letter-spacing: 0.02em; color: var(--ink-soft); text-align: center; line-height: 1.1; }
-.event-info { min-width: 0; flex: 1; }
-.event-info strong { display: block; font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 1.08rem; }
+.event-info { flex: 0 0 auto; width: 220px; min-width: 0; }
+.event-info strong { display: block; font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 1.08rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .event-info span { color: var(--ink-soft); font-size: 0.82rem; }
-.event-attendees { display: flex; flex-wrap: wrap; gap: 14px; padding-left: 178px; }
+.event-attendees { flex: 1 1 auto; min-width: 0; display: flex; align-items: center; gap: 14px; overflow-x: auto; padding: 6px 4px 10px; }
 .event-attendee { position: relative; flex: none; }
-.event-attendee-photo { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; display: block; border: 1.5px solid var(--rule); }
-.event-attendee-email { position: absolute; right: -3px; bottom: -3px; display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--brand); color: #fff; border: 2px solid #fff; transition: transform 0.15s ease, background 0.15s ease; }
+.event-attendee-photo { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; object-position: center 15%; display: block; border: 1.5px solid var(--rule); image-rendering: -webkit-optimize-contrast; }
+.event-attendee-email { position: absolute; right: -3px; bottom: -3px; display: flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; background: var(--brand); color: #fff; border: 2px solid #fff; transition: transform 0.15s ease, background 0.15s ease; }
 .event-attendee-email:hover { transform: scale(1.12); background: var(--accent-hotel); }
-.event-attendee-email svg { width: 11px; height: 11px; }
+.event-attendee-email svg { width: 10px; height: 10px; }
+@media (max-width: 900px) {
+  .event-info { width: 160px; }
+}
 @media (max-width: 720px) {
   .event-date { width: auto; padding-right: 0; border-right: none; }
-  .event-attendees { padding-left: 0; }
 }
 
 /* ---------- CTA band ---------- */
@@ -278,7 +279,6 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--brand); out
   .path-grid, .grid-2, .grid-3, .grid-4, .office-grid, .form-grid { grid-template-columns: 1fr; }
   .step-grid, .team-grid { grid-template-columns: 1fr 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
-  .event-main { flex-wrap: wrap; row-gap: 8px; }
   .cta-band { padding: 32px 20px; }
 }
 
