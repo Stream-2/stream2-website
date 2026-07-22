@@ -68,11 +68,28 @@ function renderList(container, items, type) {
               ? '<div class="event-logo-box text-fallback">' + escapeHtml(item.logo_text) + "</div>"
               : '<div class="event-logo-box' + (item.logo_dark ? " dark" : "") + '">' +
                 '<img src="' + escapeHtml(item.logo) + '" alt="' + escapeHtml(item.name) + '" loading="lazy" /></div>';
+          var attendeesHtml = "";
+          if (Array.isArray(item.attendees) && item.attendees.length) {
+            attendeesHtml =
+              '<div class="event-attendees">' +
+              item.attendees
+                .map(function (person) {
+                  return (
+                    '<span class="event-attendee"><img class="event-attendee-photo" src="' +
+                    escapeHtml(person.photo) + '" alt="' + escapeHtml(person.name) + '" loading="lazy" />' +
+                    "<span>" + escapeHtml(person.name) + "</span>" +
+                    '<a class="event-attendee-email" href="mailto:' + escapeHtml(person.email) +
+                    '" aria-label="Email ' + escapeHtml(person.name) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></a></span>'
+                  );
+                })
+                .join("") +
+              "</div>";
+          }
           return (
             '<div class="event-row"><div class="event-date"><span class="event-day">' + escapeHtml(item.day) +
             '</span><span class="event-month">' + escapeHtml(item.month) + "</span></div>" + logoHtml +
             '<div class="event-info"><strong>' + escapeHtml(item.name) + "</strong><span>" +
-            escapeHtml(item.city) + "</span></div></div>"
+            escapeHtml(item.city) + "</span></div>" + attendeesHtml + "</div>"
           );
 
         default:

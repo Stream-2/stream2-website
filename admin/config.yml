@@ -273,7 +273,16 @@ collections:
               - { label: "Dark logo box", name: "logo_dark", widget: "boolean", default: false }
               - { label: "Event name", name: "name", widget: "string" }
               - { label: "City", name: "city", widget: "string" }
+              - label: "Attendees"
+                name: "attendees"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Email", name: "email", widget: "string" }
+                  - { label: "Photo", name: "photo", widget: "image" }
           - { label: "Closing CTA heading", name: "cta_heading", widget: "string" }
+          - { label: "Closing CTA button link", name: "cta_link", widget: "string" }
 
   - name: "events_es"
     label: "Eventos (Español)"
@@ -298,7 +307,16 @@ collections:
               - { label: "Caja de logo oscura", name: "logo_dark", widget: "boolean", default: false }
               - { label: "Nombre del evento", name: "name", widget: "string" }
               - { label: "Ciudad", name: "city", widget: "string" }
+              - label: "Asistentes"
+                name: "attendees"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Nombre", name: "name", widget: "string" }
+                  - { label: "Email", name: "email", widget: "string" }
+                  - { label: "Foto", name: "photo", widget: "image" }
           - { label: "Titular del CTA final", name: "cta_heading", widget: "string" }
+          - { label: "Enlace del botón CTA final", name: "cta_link", widget: "string" }
 
   - name: "about_en"
     label: "Our Team (English)"

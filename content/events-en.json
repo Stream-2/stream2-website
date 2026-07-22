@@ -4,16 +4,41 @@
   "lede": "Our presence at key international events lets us expand our network and gain real-time market insight — so we can keep delivering the most precise solutions for your group bookings.",
   "background_video": "/assets/video/Evento.mp4",
   "events": [
-    { "day": "02–04", "month": "Sep 2026", "logo_type": "image", "logo": "/assets/img/events/itb-india.jpg", "logo_dark": false, "name": "ITB India", "city": "Mumbai" },
-    { "day": "02–04", "month": "Sep 2026", "logo_type": "image", "logo": "/assets/img/events/bltm-india.png", "logo_dark": true, "name": "BLTM India", "city": "Delhi" },
+    { "day": "02–04", "month": "Sep 2026", "logo_type": "image", "logo": "/assets/img/events/itb-india.jpg", "logo_dark": false, "name": "ITB India", "city": "Mumbai", "attendees": [
+      { "name": "Yogesh Sharma", "email": "yogesh@stream2.eu", "photo": "/assets/img/team/yogesh-sharma.jpg" }
+    ] },
+    { "day": "02–04", "month": "Sep 2026", "logo_type": "image", "logo": "/assets/img/events/bltm-india.png", "logo_dark": true, "name": "BLTM India", "city": "Delhi", "attendees": [
+      { "name": "Yogesh Sharma", "email": "yogesh@stream2.eu", "photo": "/assets/img/team/yogesh-sharma.jpg" }
+    ] },
     { "day": "23–25", "month": "Sep 2026", "logo_type": "image", "logo": "/assets/img/events/iftm-top-resa.png", "logo_dark": false, "name": "IFTM Top Resa", "city": "Paris" },
     { "day": "05–08", "month": "Oct 2026", "logo_type": "text", "logo_text": "BUY veneto", "logo_dark": false, "name": "BUY Veneto", "city": "Veneto" },
     { "day": "14–16", "month": "Oct 2026", "logo_type": "image", "logo": "/assets/img/events/ttg-travel-experience.svg", "logo_dark": true, "name": "TTG Travel Experience", "city": "Rimini" },
-    { "day": "03", "month": "Nov 2026", "logo_type": "image", "logo": "/assets/img/events/gem-london.svg", "logo_dark": false, "name": "GEM London", "city": "London" },
-    { "day": "03–05", "month": "Nov 2026", "logo_type": "image", "logo": "/assets/img/events/wtm-london.png", "logo_dark": true, "name": "WTM London", "city": "London" },
-    { "day": "17–19", "month": "Nov 2026", "logo_type": "image", "logo": "/assets/img/events/ibtm-world.png", "logo_dark": true, "name": "IBTM World", "city": "Barcelona" },
-    { "day": "20–24", "month": "Jan 2027", "logo_type": "image", "logo": "/assets/img/events/fitur.svg", "logo_dark": false, "name": "FITUR", "city": "Madrid" },
+    { "day": "03", "month": "Nov 2026", "logo_type": "image", "logo": "/assets/img/events/gem-london.svg", "logo_dark": false, "name": "GEM London", "city": "London", "attendees": [
+      { "name": "René Geleynse", "email": "rene@stream2.nl", "photo": "/assets/img/team/rene-geleynse.jpg" },
+      { "name": "Fernando Barriales", "email": "fernando@stream2.es", "photo": "/assets/img/team/fernando-barriales.jpg" }
+    ] },
+    { "day": "03–05", "month": "Nov 2026", "logo_type": "image", "logo": "/assets/img/events/wtm-london.png", "logo_dark": true, "name": "WTM London", "city": "London", "attendees": [
+      { "name": "René Geleynse", "email": "rene@stream2.nl", "photo": "/assets/img/team/rene-geleynse.jpg" },
+      { "name": "Fernando Barriales", "email": "fernando@stream2.es", "photo": "/assets/img/team/fernando-barriales.jpg" },
+      { "name": "Adrian Sabariego", "email": "adrian@stream2.es", "photo": "/assets/img/team/adrian-sabariego.jpg" },
+      { "name": "Ziga Petek", "email": "ziga@stream2.nl", "photo": "/assets/img/team/ziga-petek.jpg" }
+    ] },
+    { "day": "17–19", "month": "Nov 2026", "logo_type": "image", "logo": "/assets/img/events/ibtm-world.png", "logo_dark": true, "name": "IBTM World", "city": "Barcelona", "attendees": [
+      { "name": "Cristina Alvarez", "email": "cristina@stream2.es", "photo": "/assets/img/team/cristina-alvarez.jpg" }
+    ] },
+    { "day": "20–24", "month": "Jan 2027", "logo_type": "image", "logo": "/assets/img/events/fitur.svg", "logo_dark": false, "name": "FITUR", "city": "Madrid", "attendees": [
+      { "name": "Adrian Sabariego", "email": "adrian@stream2.es", "photo": "/assets/img/team/adrian-sabariego.jpg" },
+      { "name": "René Geleynse", "email": "rene@stream2.nl", "photo": "/assets/img/team/rene-geleynse.jpg" },
+      { "name": "Alvaro Grande", "email": "alvaro@stream2.eu", "photo": "/assets/img/team/alvaro-grande.jpg" },
+      { "name": "Cristina Vela", "email": "cris@stream2.es", "photo": "/assets/img/team/cristina-vela.jpg" },
+      { "name": "Fernando Barriales", "email": "fernando@stream2.es", "photo": "/assets/img/team/fernando-barriales.jpg" },
+      { "name": "Lucía González", "email": "lucia@stream2.es", "photo": "/assets/img/team/lucia-gonzalez.jpg" },
+      { "name": "Almudena Alvarez", "email": "almudena@stream2.es", "photo": "/assets/img/team/almudena-alvarez.jpg" },
+      { "name": "Wenqi Deng", "email": "wenqi@stream2.eu", "photo": "/assets/img/team/wenqi-deng.jpg" },
+      { "name": "Yogesh Sharma", "email": "yogesh@stream2.eu", "photo": "/assets/img/team/yogesh-sharma.jpg" }
+    ] },
     { "day": "16–18", "month": "Mar 2027", "logo_type": "image", "logo": "/assets/img/events/itb-berlin.svg", "logo_dark": false, "name": "ITB Berlin", "city": "Berlin" }
   ],
-  "cta_heading": "Join us at an upcoming event — let's build the future of hospitality together."
+  "cta_heading": "Join us at an upcoming event — let's build the future of hospitality together.",
+  "cta_link": "mailto:info@stream2.nl"
 }
