@@ -16,16 +16,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:SOFT,WONK,opsz,wght@0,0,9..144,300..700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
-<body>
+<body data-cms-page="about">
 <div data-include="/assets/partials/header-es.html"></div>
 
 <section class="hero hero-dark hero-video-wrap">
-  <video class="hero-video-bg" src="/assets/video/Equipo.mp4" autoplay muted loop playsinline></video>
+  <video class="hero-video-bg" src="/assets/video/Equipo.mp4" data-cms="background_video" data-cms-src autoplay muted loop playsinline></video>
   <div class="hero-video-overlay"></div>
   <div class="container">
-    <span class="eyebrow">Nuestro Equipo</span>
-    <h1>El equipo detrás de tu negocio de grupos.</h1>
-    <p class="lede">Desde hace casi 20 años, un equipo multilingüe conecta a los hoteles europeos con los organizadores internacionales que les traen grupos — negociando en 12 idiomas, desde oficinas en Países Bajos y España.</p>
+    <span class="eyebrow" data-cms="eyebrow">Nuestro Equipo</span>
+    <h1 data-cms="headline">El equipo detrás de tu negocio de grupos.</h1>
+    <p class="lede" data-cms="lede">Desde hace casi 20 años, un equipo multilingüe conecta a los hoteles europeos con los organizadores internacionales que les traen grupos — negociando en 12 idiomas, desde oficinas en Países Bajos y España.</p>
   </div>
 </section>
 
@@ -72,7 +72,7 @@
 <section>
   <div class="container">
     <div class="cta-band">
-      <h2>¿Quieres trabajar con este equipo?</h2>
+      <h2 data-cms="cta_heading">¿Quieres trabajar con este equipo?</h2>
       <div class="btn-row">
         <a class="btn btn-on-dark" href="/es/para-hoteles.html">Habla con nosotros sobre la estrategia de grupos de tu hotel →</a>
         <a class="btn btn-ghost btn-on-dark" href="/es/para-turoperadores.html">Envíanos tus necesidades hoteleras →</a>
@@ -84,6 +84,7 @@
 <div data-include="/assets/partials/footer-es.html"></div>
 <script src="/assets/js/include.js"></script>
 <script src="/assets/js/cookie-consent.js"></script>
+<script src="/assets/js/content-loader.js"></script>
 <script src="/assets/js/main.js"></script>
 </body>
 </html>

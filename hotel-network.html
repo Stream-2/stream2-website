@@ -17,15 +17,15 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
-<body>
+<body data-cms-page="hotel-network">
 <div data-include="/assets/partials/header-en.html"></div>
 
 <section class="hero hero-dark hero-video-wrap">
-  <video class="hero-video-bg" src="/assets/video/Mapa.mp4" autoplay muted loop playsinline></video>
+  <video class="hero-video-bg" src="/assets/video/Mapa.mp4" data-cms="background_video" data-cms-src autoplay muted loop playsinline></video>
   <div class="hero-video-overlay"></div>
   <div class="container">
-    <span class="eyebrow">Hotel network</span>
-    <h1>Our European hotel network, mapped.</h1>
+    <span class="eyebrow" data-cms="eyebrow">Hotel network</span>
+    <h1 data-cms="headline">Our European hotel network, mapped.</h1>
   </div>
 </section>
 
@@ -36,11 +36,11 @@
 </section>
 
 <section class="hero hero-dark hero-video-wrap">
-  <video class="hero-video-bg" src="/assets/video/Pasillo2.mp4" autoplay muted loop playsinline></video>
+  <video class="hero-video-bg" src="/assets/video/Pasillo2.mp4" data-cms="s2_background_video" data-cms-src autoplay muted loop playsinline></video>
   <div class="hero-video-overlay"></div>
   <div class="container">
-    <span class="eyebrow">What "selected" means</span>
-    <h2>Every partner hotel meets a clear standard</h2>
+    <span class="eyebrow" data-cms="s2_eyebrow">What "selected" means</span>
+    <h2 data-cms="s2_heading">Every partner hotel meets a clear standard</h2>
     <ul class="check-list check-list-on-dark">
       <li>Consistent online rating of 7.5+</li>
       <li>80+ rooms with strong twin capacity</li>
@@ -53,7 +53,7 @@
 <section>
   <div class="container">
     <div class="cta-band">
-      <h2>Are you a hotel, or looking for hotels?</h2>
+      <h2 data-cms="cta_heading">Are you a hotel, or looking for hotels?</h2>
       <div class="btn-row">
         <a class="btn btn-on-dark" href="/for-hotels.html">Are you a hotel? Explore a partnership →</a>
         <a class="btn btn-ghost btn-on-dark" href="/for-travel-partners.html">Looking for hotels? Send your requirements →</a>
@@ -65,6 +65,7 @@
 <div data-include="/assets/partials/footer-en.html"></div>
 <script src="/assets/js/include.js"></script>
 <script src="/assets/js/cookie-consent.js"></script>
+<script src="/assets/js/content-loader.js"></script>
 <script src="/assets/js/main.js"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="/assets/js/map.js"></script>

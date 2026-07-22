@@ -16,19 +16,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:SOFT,WONK,opsz,wght@0,0,9..144,300..700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
-<body>
+<body data-cms-page="for-hotels">
 <div data-include="/assets/partials/header-en.html"></div>
 
 <section class="hero hero-dark hero-video-wrap">
-  <video class="hero-video-bg" src="/assets/video/Pasillo.mp4" autoplay muted loop playsinline></video>
+  <video class="hero-video-bg" src="/assets/video/Pasillo.mp4" data-cms="background_video" data-cms-src autoplay muted loop playsinline></video>
   <div class="hero-video-overlay"></div>
   <div class="container">
-    <span class="eyebrow" style="color:#e8b592;">For Hotels</span>
-    <h1>Your international group sales team — without the extra headcount.</h1>
-    <p class="lede">We represent your hotel in key leisure source markets, negotiate and qualify every request, and act like an in-house sales team. You always keep full control over pricing and acceptance.</p>
+    <span class="eyebrow" data-cms="eyebrow" style="color:#e8b592;">For Hotels</span>
+    <h1 data-cms="headline">Your international group sales team — without the extra headcount.</h1>
+    <p class="lede" data-cms="lede">We represent your hotel in key leisure source markets, negotiate and qualify every request, and act like an in-house sales team. You always keep full control over pricing and acceptance.</p>
     <div class="btn-row">
-      <a class="btn" style="background:var(--accent-hotel); color:#fff;" href="/contact.html">Discuss your hotel's group strategy →</a>
-      <a class="btn btn-ghost btn-on-dark" href="#fit">See if your hotel is a fit →</a>
+      <a class="btn" style="background:var(--accent-hotel); color:#fff;" data-cms="cta1_label" href="/contact.html">Discuss your hotel's group strategy →</a>
+      <a class="btn btn-ghost btn-on-dark" data-cms="cta2_label" href="#fit">See if your hotel is a fit →</a>
     </div>
   </div>
 </section>
@@ -36,9 +36,9 @@
 <section class="section-soft">
   <div class="container grid grid-2" style="align-items:center;">
     <div>
-      <span class="eyebrow">Why leisure groups matter</span>
-      <h2>Groups build your foundation</h2>
-      <p>Hotels without a group focus lose structural market share. Leisure groups are the quiet engine behind base occupancy.</p>
+      <span class="eyebrow" data-cms="s2_eyebrow">Why leisure groups matter</span>
+      <h2 data-cms="s2_heading">Groups build your foundation</h2>
+      <p data-cms="s2_body">Hotels without a group focus lose structural market share. Leisure groups are the quiet engine behind base occupancy.</p>
       <ul class="check-list">
         <li>30–35% revenue contribution</li>
         <li>Reduced occupancy volatility</li>
@@ -46,7 +46,7 @@
         <li>Protected low-season performance</li>
       </ul>
     </div>
-    <div class="hero-split-photo"><img src="/assets/img/photos/hotel-facade.jpg" alt="European hotel entrance" /></div>
+    <div class="hero-split-photo"><img src="/assets/img/photos/hotel-facade.jpg" alt="European hotel entrance" data-cms="s2_photo" data-cms-src /></div>
   </div>
 </section>
 
@@ -82,11 +82,11 @@
 </section>
 
 <section id="fit" class="hero hero-dark hero-video-wrap">
-  <img class="hero-image-bg" src="/assets/img/photos/key-handoff.jpg" alt="Hotel key card handover at reception" />
+  <img class="hero-image-bg" src="/assets/img/photos/key-handoff.jpg" alt="Hotel key card handover at reception" data-cms="fit_photo" data-cms-src />
   <div class="hero-video-overlay"></div>
   <div class="container">
-    <span class="eyebrow">Partnership fit</span>
-    <h2>Is your hotel a fit?</h2>
+    <span class="eyebrow" data-cms="fit_eyebrow">Partnership fit</span>
+    <h2 data-cms="fit_heading">Is your hotel a fit?</h2>
     <ul class="check-list check-list-on-dark grid grid-2">
       <li>Consistent online rating of 7.5+</li>
       <li>80+ rooms with strong twin capacity</li>
@@ -113,8 +113,8 @@
 <section>
   <div class="container">
     <div class="testimonial">
-      <p>"We've kept full control over our rates and acceptance criteria from day one — Stream2 simply brings us the right groups, at the right time. It feels like having our own international sales desk, without the overhead."</p>
-      <cite>Revenue Manager, 4-star Hotel, Amsterdam</cite>
+      <p data-cms="testimonial_quote">"We've kept full control over our rates and acceptance criteria from day one — Stream2 simply brings us the right groups, at the right time. It feels like having our own international sales desk, without the overhead."</p>
+      <cite data-cms="testimonial_cite">Revenue Manager, 4-star Hotel, Amsterdam</cite>
     </div>
   </div>
 </section>
@@ -122,7 +122,7 @@
 <section>
   <div class="container">
     <div class="cta-band">
-      <h2>Let's talk about your hotel's group strategy.</h2>
+      <h2 data-cms="cta_heading">Let's talk about your hotel's group strategy.</h2>
       <div class="btn-row">
         <a class="btn btn-on-dark" href="/contact.html">Explore a hotel partnership →</a>
       </div>
@@ -133,6 +133,7 @@
 <div data-include="/assets/partials/footer-en.html"></div>
 <script src="/assets/js/include.js"></script>
 <script src="/assets/js/cookie-consent.js"></script>
+<script src="/assets/js/content-loader.js"></script>
 <script src="/assets/js/main.js"></script>
 </body>
 </html>

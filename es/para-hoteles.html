@@ -16,19 +16,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:SOFT,WONK,opsz,wght@0,0,9..144,300..700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
-<body>
+<body data-cms-page="for-hotels">
 <div data-include="/assets/partials/header-es.html"></div>
 
 <section class="hero hero-dark hero-video-wrap">
-  <video class="hero-video-bg" src="/assets/video/Pasillo.mp4" autoplay muted loop playsinline></video>
+  <video class="hero-video-bg" src="/assets/video/Pasillo.mp4" data-cms="background_video" data-cms-src autoplay muted loop playsinline></video>
   <div class="hero-video-overlay"></div>
   <div class="container">
-    <span class="eyebrow" style="color:#e8b592;">Para Hoteles</span>
-    <h1>Su equipo comercial internacional de grupos, sin ampliar plantilla.</h1>
-    <p class="lede">Representamos a su hotel en los mercados emisores de ocio clave, negociamos y cualificamos cada solicitud, y actuamos como un equipo comercial propio. Usted mantiene siempre el control total sobre tarifas y aceptación.</p>
+    <span class="eyebrow" data-cms="eyebrow" style="color:#e8b592;">Para Hoteles</span>
+    <h1 data-cms="headline">Su equipo comercial internacional de grupos, sin ampliar plantilla.</h1>
+    <p class="lede" data-cms="lede">Representamos a su hotel en los mercados emisores de ocio clave, negociamos y cualificamos cada solicitud, y actuamos como un equipo comercial propio. Usted mantiene siempre el control total sobre tarifas y aceptación.</p>
     <div class="btn-row">
-      <a class="btn" style="background:var(--accent-hotel); color:#fff;" href="/es/contacto.html">Habla con nosotros sobre la estrategia de grupos de tu hotel →</a>
-      <a class="btn btn-ghost btn-on-dark" href="#encaje">Comprueba si tu hotel encaja →</a>
+      <a class="btn" style="background:var(--accent-hotel); color:#fff;" data-cms="cta1_label" href="/es/contacto.html">Habla con nosotros sobre la estrategia de grupos de tu hotel →</a>
+      <a class="btn btn-ghost btn-on-dark" data-cms="cta2_label" href="#encaje">Comprueba si tu hotel encaja →</a>
     </div>
   </div>
 </section>
@@ -36,9 +36,9 @@
 <section class="section-soft">
   <div class="container grid grid-2" style="align-items:center;">
     <div>
-      <span class="eyebrow">Por qué importan los grupos de ocio</span>
-      <h2>Los grupos construyen tu base</h2>
-      <p>Los hoteles sin foco en grupos pierden cuota de mercado estructural. Los grupos de ocio son el motor silencioso de la ocupación base.</p>
+      <span class="eyebrow" data-cms="s2_eyebrow">Por qué importan los grupos de ocio</span>
+      <h2 data-cms="s2_heading">Los grupos construyen tu base</h2>
+      <p data-cms="s2_body">Los hoteles sin foco en grupos pierden cuota de mercado estructural. Los grupos de ocio son el motor silencioso de la ocupación base.</p>
       <ul class="check-list">
         <li>30–35% de contribución a ingresos</li>
         <li>Menor volatilidad de ocupación</li>
@@ -46,7 +46,7 @@
         <li>Protección en temporada baja</li>
       </ul>
     </div>
-    <div class="hero-split-photo"><img src="/assets/img/photos/hotel-facade.jpg" alt="Entrada de hotel europeo" /></div>
+    <div class="hero-split-photo"><img src="/assets/img/photos/hotel-facade.jpg" alt="Entrada de hotel europeo" data-cms="s2_photo" data-cms-src /></div>
   </div>
 </section>
 
@@ -82,11 +82,11 @@
 </section>
 
 <section id="encaje" class="hero hero-dark hero-video-wrap">
-  <img class="hero-image-bg" src="/assets/img/photos/key-handoff.jpg" alt="Entrega de tarjeta llave en recepción" />
+  <img class="hero-image-bg" src="/assets/img/photos/key-handoff.jpg" alt="Entrega de tarjeta llave en recepción" data-cms="fit_photo" data-cms-src />
   <div class="hero-video-overlay"></div>
   <div class="container">
-    <span class="eyebrow">Encaje de colaboración</span>
-    <h2>¿Tu hotel encaja?</h2>
+    <span class="eyebrow" data-cms="fit_eyebrow">Encaje de colaboración</span>
+    <h2 data-cms="fit_heading">¿Tu hotel encaja?</h2>
     <ul class="check-list check-list-on-dark grid grid-2">
       <li>Valoración online estable de 7,5+</li>
       <li>Más de 80 habitaciones con buena capacidad doble</li>
@@ -113,8 +113,8 @@
 <section>
   <div class="container">
     <div class="testimonial">
-      <p>"Hemos mantenido el control total sobre nuestras tarifas y criterios de aceptación desde el primer día — Stream2 simplemente nos trae los grupos adecuados, en el momento adecuado. Es como tener nuestro propio departamento comercial internacional, sin el coste fijo."</p>
-      <cite>Revenue Manager, hotel 4 estrellas, Ámsterdam</cite>
+      <p data-cms="testimonial_quote">"Hemos mantenido el control total sobre nuestras tarifas y criterios de aceptación desde el primer día — Stream2 simplemente nos trae los grupos adecuados, en el momento adecuado. Es como tener nuestro propio departamento comercial internacional, sin el coste fijo."</p>
+      <cite data-cms="testimonial_cite">Revenue Manager, hotel 4 estrellas, Ámsterdam</cite>
     </div>
   </div>
 </section>
@@ -122,7 +122,7 @@
 <section>
   <div class="container">
     <div class="cta-band">
-      <h2>Hablemos de la estrategia de grupos de tu hotel.</h2>
+      <h2 data-cms="cta_heading">Hablemos de la estrategia de grupos de tu hotel.</h2>
       <div class="btn-row">
         <a class="btn btn-on-dark" href="/es/contacto.html">Explorar una colaboración hotelera →</a>
       </div>
@@ -133,6 +133,7 @@
 <div data-include="/assets/partials/footer-es.html"></div>
 <script src="/assets/js/include.js"></script>
 <script src="/assets/js/cookie-consent.js"></script>
+<script src="/assets/js/content-loader.js"></script>
 <script src="/assets/js/main.js"></script>
 </body>
 </html>

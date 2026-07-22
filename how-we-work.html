@@ -16,16 +16,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:SOFT,WONK,opsz,wght@0,0,9..144,300..700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
-<body>
+<body data-cms-page="how-we-work">
 <div data-include="/assets/partials/header-en.html"></div>
 
 <section class="hero hero-dark hero-video-wrap">
-  <video class="hero-video-bg" src="/assets/video/Ascensor.mp4" autoplay muted loop playsinline></video>
+  <video class="hero-video-bg" src="/assets/video/Ascensor.mp4" data-cms="background_video" data-cms-src autoplay muted loop playsinline></video>
   <div class="hero-video-overlay"></div>
   <div class="container">
-    <span class="eyebrow">How we work</span>
-    <h1>One process, built around whichever side of the table you're on.</h1>
-    <p class="lede">Whether you're a hotel or a travel organiser, the same specialist teams and the same discipline sit behind every group we place.</p>
+    <span class="eyebrow" data-cms="eyebrow">How we work</span>
+    <h1 data-cms="headline">One process, built around whichever side of the table you're on.</h1>
+    <p class="lede" data-cms="lede">Whether you're a hotel or a travel organiser, the same specialist teams and the same discipline sit behind every group we place.</p>
   </div>
 </section>
 
@@ -66,7 +66,7 @@
 <section>
   <div class="container">
     <div class="cta-band">
-      <h2>Ready to see the process in action?</h2>
+      <h2 data-cms="cta_heading">Ready to see the process in action?</h2>
       <div class="btn-row">
         <a class="btn btn-on-dark" href="/for-hotels.html">Discuss your hotel's group strategy →</a>
         <a class="btn btn-ghost btn-on-dark" href="/for-travel-partners.html">Send us your hotel requirements →</a>
@@ -78,6 +78,7 @@
 <div data-include="/assets/partials/footer-en.html"></div>
 <script src="/assets/js/include.js"></script>
 <script src="/assets/js/cookie-consent.js"></script>
+<script src="/assets/js/content-loader.js"></script>
 <script src="/assets/js/main.js"></script>
 </body>
 </html>

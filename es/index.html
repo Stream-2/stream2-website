@@ -16,19 +16,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:SOFT,WONK,opsz,wght@0,0,9..144,300..700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
-<body>
+<body data-cms-page="home">
 <div data-include="/assets/partials/header-es.html"></div>
 
 <section class="hero hero-dark hero-video-wrap">
-  <video class="hero-video-bg" src="/assets/video/Lobby.mp4" autoplay muted loop playsinline></video>
+  <video class="hero-video-bg" src="/assets/video/Lobby.mp4" data-cms="background_video" data-cms-src autoplay muted loop playsinline></video>
   <div class="hero-video-overlay"></div>
   <div class="container">
-    <span class="eyebrow" id="cms-eyebrow" style="color:#9fc4da;">#1 socio para grupos hoteleros en Europa</span>
-    <h1 id="cms-headline">Su equipo comercial internacional.<br />Su red hotelera directa.</h1>
-    <p class="lede" id="cms-lede">Desde hace casi 20 años, Stream2 conecta hoteles europeos con organizadores internacionales de grupos de ocio: contratos directos, tarifas siempre bajo control del hotel, un único contacto dedicado.</p>
+    <span class="eyebrow" data-cms="eyebrow" style="color:#9fc4da;">#1 socio para grupos hoteleros en Europa</span>
+    <h1 data-cms="headline_line1" data-cms-twoline="headline_line2">Su equipo comercial internacional.<br />Su red hotelera directa.</h1>
+    <p class="lede" data-cms="lede">Desde hace casi 20 años, Stream2 conecta hoteles europeos con organizadores internacionales de grupos de ocio: contratos directos, tarifas siempre bajo control del hotel, un único contacto dedicado.</p>
     <div class="btn-row">
-      <a class="btn btn-on-dark" id="cms-cta1" href="/es/para-hoteles.html">Impulsa el negocio de grupos de tu hotel →</a>
-      <a class="btn btn-ghost btn-on-dark" id="cms-cta2" href="/es/para-turoperadores.html">Encuentra tu próximo hotel para grupos →</a>
+      <a class="btn btn-on-dark" data-cms="cta1_label" href="/es/para-hoteles.html" data-cms-href-field="cta1_href">Impulsa el negocio de grupos de tu hotel →</a>
+      <a class="btn btn-ghost btn-on-dark" data-cms="cta2_label" href="/es/para-turoperadores.html" data-cms-href-field="cta2_href">Encuentra tu próximo hotel para grupos →</a>
     </div>
   </div>
 </section>

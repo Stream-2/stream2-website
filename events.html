@@ -16,16 +16,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:SOFT,WONK,opsz,wght@0,0,9..144,300..700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
-<body>
+<body data-cms-page="events">
 <div data-include="/assets/partials/header-en.html"></div>
 
 <section class="hero hero-dark hero-video-wrap">
-  <video class="hero-video-bg" src="/assets/video/Evento.mp4" autoplay muted loop playsinline></video>
+  <video class="hero-video-bg" src="/assets/video/Evento.mp4" data-cms="background_video" data-cms-src autoplay muted loop playsinline></video>
   <div class="hero-video-overlay"></div>
   <div class="container">
-    <span class="eyebrow">Our global footprint</span>
-    <h1>Let's meet in person.</h1>
-    <p class="lede">Our presence at key international events lets us expand our network and gain real-time market insight — so we can keep delivering the most precise solutions for your group bookings.</p>
+    <span class="eyebrow" data-cms="eyebrow">Our global footprint</span>
+    <h1 data-cms="headline">Let's meet in person.</h1>
+    <p class="lede" data-cms="lede">Our presence at key international events lets us expand our network and gain real-time market insight — so we can keep delivering the most precise solutions for your group bookings.</p>
   </div>
 </section>
 
@@ -47,7 +47,7 @@
 <section class="section-soft">
   <div class="container">
     <div class="cta-band">
-      <h2>Join us at an upcoming event — let's build the future of hospitality together.</h2>
+      <h2 data-cms="cta_heading">Join us at an upcoming event — let's build the future of hospitality together.</h2>
       <div class="btn-row">
         <a class="btn btn-on-dark" href="/contact.html">Let's meet →</a>
       </div>
@@ -58,6 +58,7 @@
 <div data-include="/assets/partials/footer-en.html"></div>
 <script src="/assets/js/include.js"></script>
 <script src="/assets/js/cookie-consent.js"></script>
+<script src="/assets/js/content-loader.js"></script>
 <script src="/assets/js/main.js"></script>
 </body>
 </html>

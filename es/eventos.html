@@ -16,16 +16,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:SOFT,WONK,opsz,wght@0,0,9..144,300..700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
-<body>
+<body data-cms-page="events">
 <div data-include="/assets/partials/header-es.html"></div>
 
 <section class="hero hero-dark hero-video-wrap">
-  <video class="hero-video-bg" src="/assets/video/Evento.mp4" autoplay muted loop playsinline></video>
+  <video class="hero-video-bg" src="/assets/video/Evento.mp4" data-cms="background_video" data-cms-src autoplay muted loop playsinline></video>
   <div class="hero-video-overlay"></div>
   <div class="container">
-    <span class="eyebrow">Nuestra presencia global</span>
-    <h1>Nos vemos en persona.</h1>
-    <p class="lede">Nuestra presencia en los eventos internacionales clave nos permite ampliar la red y obtener información de mercado en tiempo real — para seguir ofreciendo las soluciones más precisas para tus grupos.</p>
+    <span class="eyebrow" data-cms="eyebrow">Nuestra presencia global</span>
+    <h1 data-cms="headline">Nos vemos en persona.</h1>
+    <p class="lede" data-cms="lede">Nuestra presencia en los eventos internacionales clave nos permite ampliar la red y obtener información de mercado en tiempo real — para seguir ofreciendo las soluciones más precisas para tus grupos.</p>
   </div>
 </section>
 
@@ -47,7 +47,7 @@
 <section class="section-soft">
   <div class="container">
     <div class="cta-band">
-      <h2>Únete a nosotros en un próximo evento — construyamos juntos el futuro de la hostelería.</h2>
+      <h2 data-cms="cta_heading">Únete a nosotros en un próximo evento — construyamos juntos el futuro de la hostelería.</h2>
       <div class="btn-row">
         <a class="btn btn-on-dark" href="/es/contacto.html">Reunámonos →</a>
       </div>
@@ -58,6 +58,7 @@
 <div data-include="/assets/partials/footer-es.html"></div>
 <script src="/assets/js/include.js"></script>
 <script src="/assets/js/cookie-consent.js"></script>
+<script src="/assets/js/content-loader.js"></script>
 <script src="/assets/js/main.js"></script>
 </body>
 </html>

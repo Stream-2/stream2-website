@@ -16,19 +16,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:SOFT,WONK,opsz,wght@0,0,9..144,300..700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
-<body>
+<body data-cms-page="home">
 <div data-include="/assets/partials/header-en.html"></div>
 
 <section class="hero hero-dark hero-video-wrap">
-  <video class="hero-video-bg" src="/assets/video/Lobby.mp4" autoplay muted loop playsinline></video>
+  <video class="hero-video-bg" src="/assets/video/Lobby.mp4" data-cms="background_video" data-cms-src autoplay muted loop playsinline></video>
   <div class="hero-video-overlay"></div>
   <div class="container">
-    <span class="eyebrow" id="cms-eyebrow" style="color:#9fc4da;">#1 Partner for European Group Bookings</span>
-    <h1 id="cms-headline">Your international sales team.<br />Your direct hotel network.</h1>
-    <p class="lede" id="cms-lede">For nearly 20 years, Stream2 has connected European hotels with international leisure group organisers — direct contracts, hotel-controlled rates, one dedicated contact.</p>
+    <span class="eyebrow" data-cms="eyebrow" style="color:#9fc4da;">#1 Partner for European Group Bookings</span>
+    <h1 data-cms="headline_line1" data-cms-twoline="headline_line2">Your international sales team.<br />Your direct hotel network.</h1>
+    <p class="lede" data-cms="lede">For nearly 20 years, Stream2 has connected European hotels with international leisure group organisers — direct contracts, hotel-controlled rates, one dedicated contact.</p>
     <div class="btn-row">
-      <a class="btn btn-on-dark" id="cms-cta1" href="/for-hotels.html">Grow your group business →</a>
-      <a class="btn btn-ghost btn-on-dark" id="cms-cta2" href="/for-travel-partners.html">Find your next group hotel →</a>
+      <a class="btn btn-on-dark" data-cms="cta1_label" href="/for-hotels.html" data-cms-href-field="cta1_href">Grow your group business →</a>
+      <a class="btn btn-ghost btn-on-dark" data-cms="cta2_label" href="/for-travel-partners.html" data-cms-href-field="cta2_href">Find your next group hotel →</a>
     </div>
   </div>
 </section>

@@ -39,3 +39,227 @@ collections:
           - { label: "Texto botón secundario", name: "cta2_label", widget: "string" }
           - { label: "Enlace botón secundario", name: "cta2_href", widget: "string" }
           - { label: "Vídeo o imagen de fondo", name: "background_video", widget: "file" }
+
+  - name: "for_hotels_en"
+    label: "For Hotels (English)"
+    files:
+      - name: "for_hotels_en"
+        label: "For Hotels"
+        file: "content/for-hotels-en.json"
+        fields:
+          - { label: "Hero eyebrow", name: "eyebrow", widget: "string" }
+          - { label: "Hero headline", name: "headline", widget: "string" }
+          - { label: "Hero subtitle", name: "lede", widget: "text" }
+          - { label: "Primary button text", name: "cta1_label", widget: "string" }
+          - { label: "Secondary button text", name: "cta2_label", widget: "string" }
+          - { label: "Hero background video", name: "background_video", widget: "file" }
+          - { label: "Section 2 — eyebrow", name: "s2_eyebrow", widget: "string" }
+          - { label: "Section 2 — heading", name: "s2_heading", widget: "string" }
+          - { label: "Section 2 — body", name: "s2_body", widget: "text" }
+          - { label: "Section 2 — photo", name: "s2_photo", widget: "image" }
+          - { label: "Fit section — eyebrow", name: "fit_eyebrow", widget: "string" }
+          - { label: "Fit section — heading", name: "fit_heading", widget: "string" }
+          - { label: "Fit section — background photo", name: "fit_photo", widget: "image" }
+          - { label: "Testimonial quote", name: "testimonial_quote", widget: "text" }
+          - { label: "Testimonial attribution", name: "testimonial_cite", widget: "string" }
+          - { label: "Closing CTA heading", name: "cta_heading", widget: "string" }
+
+  - name: "for_hotels_es"
+    label: "Para Hoteles (Español)"
+    files:
+      - name: "for_hotels_es"
+        label: "Para Hoteles"
+        file: "content/for-hotels-es.json"
+        fields:
+          - { label: "Eyebrow del hero", name: "eyebrow", widget: "string" }
+          - { label: "Titular del hero", name: "headline", widget: "string" }
+          - { label: "Subtítulo del hero", name: "lede", widget: "text" }
+          - { label: "Texto botón principal", name: "cta1_label", widget: "string" }
+          - { label: "Texto botón secundario", name: "cta2_label", widget: "string" }
+          - { label: "Vídeo de fondo del hero", name: "background_video", widget: "file" }
+          - { label: "Sección 2 — eyebrow", name: "s2_eyebrow", widget: "string" }
+          - { label: "Sección 2 — titular", name: "s2_heading", widget: "string" }
+          - { label: "Sección 2 — texto", name: "s2_body", widget: "text" }
+          - { label: "Sección 2 — foto", name: "s2_photo", widget: "image" }
+          - { label: "Sección encaje — eyebrow", name: "fit_eyebrow", widget: "string" }
+          - { label: "Sección encaje — titular", name: "fit_heading", widget: "string" }
+          - { label: "Sección encaje — foto de fondo", name: "fit_photo", widget: "image" }
+          - { label: "Cita del testimonio", name: "testimonial_quote", widget: "text" }
+          - { label: "Autoría del testimonio", name: "testimonial_cite", widget: "string" }
+          - { label: "Titular del CTA final", name: "cta_heading", widget: "string" }
+
+  - name: "for_travel_partners_en"
+    label: "For Travel Partners (English)"
+    files:
+      - name: "for_travel_partners_en"
+        label: "For Travel Partners"
+        file: "content/for-travel-partners-en.json"
+        fields:
+          - { label: "Hero eyebrow", name: "eyebrow", widget: "string" }
+          - { label: "Hero headline", name: "headline", widget: "string" }
+          - { label: "Hero subtitle", name: "lede", widget: "text" }
+          - { label: "Primary button text", name: "cta1_label", widget: "string" }
+          - { label: "Secondary button text", name: "cta2_label", widget: "string" }
+          - { label: "Hero background video", name: "background_video", widget: "file" }
+          - { label: "Section 2 — eyebrow", name: "s2_eyebrow", widget: "string" }
+          - { label: "Section 2 — heading", name: "s2_heading", widget: "string" }
+          - { label: "Section 2 — photo", name: "s2_photo", widget: "image" }
+          - { label: "Section 3 — eyebrow", name: "s3_eyebrow", widget: "string" }
+          - { label: "Section 3 — heading", name: "s3_heading", widget: "string" }
+          - { label: "Section 3 — photo", name: "s3_photo", widget: "image" }
+          - { label: "Testimonial quote", name: "testimonial_quote", widget: "text" }
+          - { label: "Testimonial attribution", name: "testimonial_cite", widget: "string" }
+          - { label: "Closing CTA heading", name: "cta_heading", widget: "string" }
+
+  - name: "for_travel_partners_es"
+    label: "Para Turoperadores (Español)"
+    files:
+      - name: "for_travel_partners_es"
+        label: "Para Turoperadores"
+        file: "content/for-travel-partners-es.json"
+        fields:
+          - { label: "Eyebrow del hero", name: "eyebrow", widget: "string" }
+          - { label: "Titular del hero", name: "headline", widget: "string" }
+          - { label: "Subtítulo del hero", name: "lede", widget: "text" }
+          - { label: "Texto botón principal", name: "cta1_label", widget: "string" }
+          - { label: "Texto botón secundario", name: "cta2_label", widget: "string" }
+          - { label: "Vídeo de fondo del hero", name: "background_video", widget: "file" }
+          - { label: "Sección 2 — eyebrow", name: "s2_eyebrow", widget: "string" }
+          - { label: "Sección 2 — titular", name: "s2_heading", widget: "string" }
+          - { label: "Sección 2 — foto", name: "s2_photo", widget: "image" }
+          - { label: "Sección 3 — eyebrow", name: "s3_eyebrow", widget: "string" }
+          - { label: "Sección 3 — titular", name: "s3_heading", widget: "string" }
+          - { label: "Sección 3 — foto", name: "s3_photo", widget: "image" }
+          - { label: "Cita del testimonio", name: "testimonial_quote", widget: "text" }
+          - { label: "Autoría del testimonio", name: "testimonial_cite", widget: "string" }
+          - { label: "Titular del CTA final", name: "cta_heading", widget: "string" }
+
+  - name: "how_we_work_en"
+    label: "How We Work (English)"
+    files:
+      - name: "how_we_work_en"
+        label: "How We Work"
+        file: "content/how-we-work-en.json"
+        fields:
+          - { label: "Hero eyebrow", name: "eyebrow", widget: "string" }
+          - { label: "Hero headline", name: "headline", widget: "string" }
+          - { label: "Hero subtitle", name: "lede", widget: "text" }
+          - { label: "Hero background video", name: "background_video", widget: "file" }
+          - { label: "Closing CTA heading", name: "cta_heading", widget: "string" }
+
+  - name: "how_we_work_es"
+    label: "Cómo Trabajamos (Español)"
+    files:
+      - name: "how_we_work_es"
+        label: "Cómo Trabajamos"
+        file: "content/how-we-work-es.json"
+        fields:
+          - { label: "Eyebrow del hero", name: "eyebrow", widget: "string" }
+          - { label: "Titular del hero", name: "headline", widget: "string" }
+          - { label: "Subtítulo del hero", name: "lede", widget: "text" }
+          - { label: "Vídeo de fondo del hero", name: "background_video", widget: "file" }
+          - { label: "Titular del CTA final", name: "cta_heading", widget: "string" }
+
+  - name: "hotel_network_en"
+    label: "Hotel Network (English)"
+    files:
+      - name: "hotel_network_en"
+        label: "Hotel Network"
+        file: "content/hotel-network-en.json"
+        fields:
+          - { label: "Hero eyebrow", name: "eyebrow", widget: "string" }
+          - { label: "Hero headline", name: "headline", widget: "string" }
+          - { label: "Hero background video", name: "background_video", widget: "file" }
+          - { label: "Section 2 — eyebrow", name: "s2_eyebrow", widget: "string" }
+          - { label: "Section 2 — heading", name: "s2_heading", widget: "string" }
+          - { label: "Section 2 — background video", name: "s2_background_video", widget: "file" }
+          - { label: "Closing CTA heading", name: "cta_heading", widget: "string" }
+
+  - name: "hotel_network_es"
+    label: "Red Hotelera (Español)"
+    files:
+      - name: "hotel_network_es"
+        label: "Red Hotelera"
+        file: "content/hotel-network-es.json"
+        fields:
+          - { label: "Eyebrow del hero", name: "eyebrow", widget: "string" }
+          - { label: "Titular del hero", name: "headline", widget: "string" }
+          - { label: "Vídeo de fondo del hero", name: "background_video", widget: "file" }
+          - { label: "Sección 2 — eyebrow", name: "s2_eyebrow", widget: "string" }
+          - { label: "Sección 2 — titular", name: "s2_heading", widget: "string" }
+          - { label: "Sección 2 — vídeo de fondo", name: "s2_background_video", widget: "file" }
+          - { label: "Titular del CTA final", name: "cta_heading", widget: "string" }
+
+  - name: "events_en"
+    label: "Events (English)"
+    files:
+      - name: "events_en"
+        label: "Events"
+        file: "content/events-en.json"
+        fields:
+          - { label: "Hero eyebrow", name: "eyebrow", widget: "string" }
+          - { label: "Hero headline", name: "headline", widget: "string" }
+          - { label: "Hero subtitle", name: "lede", widget: "text" }
+          - { label: "Hero background video", name: "background_video", widget: "file" }
+          - { label: "Closing CTA heading", name: "cta_heading", widget: "string" }
+
+  - name: "events_es"
+    label: "Eventos (Español)"
+    files:
+      - name: "events_es"
+        label: "Eventos"
+        file: "content/events-es.json"
+        fields:
+          - { label: "Eyebrow del hero", name: "eyebrow", widget: "string" }
+          - { label: "Titular del hero", name: "headline", widget: "string" }
+          - { label: "Subtítulo del hero", name: "lede", widget: "text" }
+          - { label: "Vídeo de fondo del hero", name: "background_video", widget: "file" }
+          - { label: "Titular del CTA final", name: "cta_heading", widget: "string" }
+
+  - name: "about_en"
+    label: "Our Team (English)"
+    files:
+      - name: "about_en"
+        label: "Our Team"
+        file: "content/about-en.json"
+        fields:
+          - { label: "Hero eyebrow", name: "eyebrow", widget: "string" }
+          - { label: "Hero headline", name: "headline", widget: "string" }
+          - { label: "Hero subtitle", name: "lede", widget: "text" }
+          - { label: "Hero background video", name: "background_video", widget: "file" }
+          - { label: "Closing CTA heading", name: "cta_heading", widget: "string" }
+
+  - name: "about_es"
+    label: "Nuestro Equipo (Español)"
+    files:
+      - name: "about_es"
+        label: "Nuestro Equipo"
+        file: "content/about-es.json"
+        fields:
+          - { label: "Eyebrow del hero", name: "eyebrow", widget: "string" }
+          - { label: "Titular del hero", name: "headline", widget: "string" }
+          - { label: "Subtítulo del hero", name: "lede", widget: "text" }
+          - { label: "Vídeo de fondo del hero", name: "background_video", widget: "file" }
+          - { label: "Titular del CTA final", name: "cta_heading", widget: "string" }
+
+  - name: "contact_en"
+    label: "Contact (English)"
+    files:
+      - name: "contact_en"
+        label: "Contact"
+        file: "content/contact-en.json"
+        fields:
+          - { label: "Hero eyebrow", name: "eyebrow", widget: "string" }
+          - { label: "Hero headline", name: "headline", widget: "string" }
+          - { label: "Hero subtitle", name: "lede", widget: "text" }
+
+  - name: "contact_es"
+    label: "Contacto (Español)"
+    files:
+      - name: "contact_es"
+        label: "Contacto"
+        file: "content/contact-es.json"
+        fields:
+          - { label: "Eyebrow del hero", name: "eyebrow", widget: "string" }
+          - { label: "Titular del hero", name: "headline", widget: "string" }
+          - { label: "Subtítulo del hero", name: "lede", widget: "text" }

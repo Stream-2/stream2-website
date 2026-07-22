@@ -16,19 +16,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:SOFT,WONK,opsz,wght@0,0,9..144,300..700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
-<body>
+<body data-cms-page="for-travel-partners">
 <div data-include="/assets/partials/header-es.html"></div>
 
 <section class="hero hero-dark hero-video-wrap">
-  <video class="hero-video-bg" src="/assets/video/Lllamada.mp4" autoplay muted loop playsinline></video>
+  <video class="hero-video-bg" src="/assets/video/Lllamada.mp4" data-cms="background_video" data-cms-src autoplay muted loop playsinline></video>
   <div class="hero-video-overlay"></div>
   <div class="container">
-    <span class="eyebrow">Para Turoperadores</span>
-    <h1>Una sola llamada sustituye a cien correos.</h1>
-    <p class="lede">Accede a más de 600 hoteles europeos seleccionados a través de un único contacto dedicado, con contrato directo y respuesta rápida.</p>
+    <span class="eyebrow" data-cms="eyebrow">Para Turoperadores</span>
+    <h1 data-cms="headline">Una sola llamada sustituye a cien correos.</h1>
+    <p class="lede" data-cms="lede">Accede a más de 600 hoteles europeos seleccionados a través de un único contacto dedicado, con contrato directo y respuesta rápida.</p>
     <div class="btn-row">
-      <a class="btn btn-primary" href="/es/contacto.html">Envíanos tus necesidades hoteleras →</a>
-      <a class="btn btn-ghost btn-on-dark" href="/es/red-hotelera.html">Explora nuestra cobertura hotelera europea →</a>
+      <a class="btn btn-primary" data-cms="cta1_label" href="/es/contacto.html">Envíanos tus necesidades hoteleras →</a>
+      <a class="btn btn-ghost btn-on-dark" data-cms="cta2_label" href="/es/red-hotelera.html">Explora nuestra cobertura hotelera europea →</a>
     </div>
   </div>
 </section>
@@ -52,8 +52,8 @@
 <section>
   <div class="container grid grid-2" style="align-items:center;">
     <div>
-      <span class="eyebrow">La forma Stream2</span>
-      <h2>No llamamos a las puertas. Ya tenemos las llaves.</h2>
+      <span class="eyebrow" data-cms="s2_eyebrow">La forma Stream2</span>
+      <h2 data-cms="s2_heading">No llamamos a las puertas. Ya tenemos las llaves.</h2>
       <ul class="check-list grid grid-2">
         <li>Acceso a más de 600 hoteles seleccionados para grupos en toda Europa</li>
         <li>Presencia real en cada hotel, desde recepción hasta propiedad</li>
@@ -64,7 +64,7 @@
       </ul>
       <p class="kicker-quote">Sin intermediarios. Sin capas extra. Solo el camino más rápido e inteligente hacia el mejor contrato directo.</p>
     </div>
-    <div class="hero-split-photo"><img src="/assets/img/photos/key-card-marble.jpg" alt="Tarjeta llave de hotel sobre un mostrador de mármol" /></div>
+    <div class="hero-split-photo"><img src="/assets/img/photos/key-card-marble.jpg" alt="Tarjeta llave de hotel sobre un mostrador de mármol" data-cms="s2_photo" data-cms-src /></div>
   </div>
 </section>
 
@@ -86,15 +86,15 @@
 <section>
   <div class="container grid grid-2" style="align-items:center;">
     <div>
-      <span class="eyebrow">Menos complejidad, más ganancia</span>
-      <h2>Lo que consigues trabajando con un solo contacto</h2>
+      <span class="eyebrow" data-cms="s3_eyebrow">Menos complejidad, más ganancia</span>
+      <h2 data-cms="s3_heading">Lo que consigues trabajando con un solo contacto</h2>
       <ul class="check-list">
         <li>Hasta un 50% menos de tiempo dedicado a contratación hotelera</li>
         <li>Un solo contacto en vez de decenas de seguimientos</li>
         <li>Negociación nativa en 12 idiomas</li>
       </ul>
     </div>
-    <div class="hero-split-photo"><img src="/assets/img/photos/efficient-workspace.jpg" alt="Espacio de trabajo limpio y ordenado" /></div>
+    <div class="hero-split-photo"><img src="/assets/img/photos/efficient-workspace.jpg" alt="Espacio de trabajo limpio y ordenado" data-cms="s3_photo" data-cms-src /></div>
   </div>
 </section>
 
@@ -112,8 +112,8 @@
 <section>
   <div class="container">
     <div class="testimonial">
-      <p>"Stream2 nos da un único contacto para la contratación hotelera, en vez de decenas. Ha reducido mucho nuestro tiempo de búsqueda, y los contratos siempre llegan directamente del hotel."</p>
-      <cite>Responsable de Contratación, Top 3 turoperador español</cite>
+      <p data-cms="testimonial_quote">"Stream2 nos da un único contacto para la contratación hotelera, en vez de decenas. Ha reducido mucho nuestro tiempo de búsqueda, y los contratos siempre llegan directamente del hotel."</p>
+      <cite data-cms="testimonial_cite">Responsable de Contratación, Top 3 turoperador español</cite>
     </div>
   </div>
 </section>
@@ -121,7 +121,7 @@
 <section>
   <div class="container">
     <div class="cta-band">
-      <h2>Háblanos de tus próximos programas.</h2>
+      <h2 data-cms="cta_heading">Háblanos de tus próximos programas.</h2>
       <div class="btn-row">
         <a class="btn btn-on-dark" href="/es/contacto.html">Envíanos tus necesidades hoteleras →</a>
       </div>
@@ -132,6 +132,7 @@
 <div data-include="/assets/partials/footer-es.html"></div>
 <script src="/assets/js/include.js"></script>
 <script src="/assets/js/cookie-consent.js"></script>
+<script src="/assets/js/content-loader.js"></script>
 <script src="/assets/js/main.js"></script>
 </body>
 </html>
