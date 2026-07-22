@@ -1,11 +1,11 @@
 {
-  "eyebrow": "#1 Partner for European Group Bookings",
-  "headline_line1": "Your international sales team.",
-  "headline_line2": "Your direct hotel network.",
-  "lede": "For nearly 20 years, Stream2 has connected European hotels with international leisure group organisers — direct contracts, hotel-controlled rates, one dedicated contact.",
-  "cta1_label": "Grow your group business →",
-  "cta1_href": "/for-hotels.html",
-  "cta2_label": "Find your next group hotel →",
   "cta2_href": "/for-travel-partners.html",
-  "background_video": "/assets/video/Lobby.mp4"
+  "cta1_href": "/for-hotels.html",
+  "eyebrow": "#1 Partner for European Group Bookings",
+  "background_video": "/assets/video/Lobby.mp4",
+  "headline_line1": "Your international ",
+  "headline_line2": "Your direct hotel network.",
+  "cta1_label": "Grow your group business →",
+  "cta2_label": "Find your next group hotel →",
+  "lede": "For nearly 20 years, Stream2 has connected European hotels with international leisure group organisers — direct contracts, hotel-controlled rates, one dedicated contact."
 }
