@@ -2,12 +2,12 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "assets/img/uploads"
-public_folder: "/assets/img/uploads"
+media_folder: "assets"
+public_folder: "/assets"
 
 collections:
   - name: "home_en"
-    label: "Home (English)"
+    label: "🏠 Home 🇬🇧"
     files:
       - name: "home_en"
         label: "Home — Hero"
@@ -24,7 +24,7 @@ collections:
           - { label: "Background video or image", name: "background_video", widget: "file" }
 
   - name: "home_es"
-    label: "Inicio (Español)"
+    label: "🏠 Inicio 🇪🇸"
     files:
       - name: "home_es"
         label: "Inicio — Hero"
@@ -41,7 +41,7 @@ collections:
           - { label: "Vídeo o imagen de fondo", name: "background_video", widget: "file" }
 
   - name: "for_hotels_en"
-    label: "For Hotels (English)"
+    label: "🏨 For Hotels 🇬🇧"
     files:
       - name: "for_hotels_en"
         label: "For Hotels"
@@ -75,7 +75,7 @@ collections:
           - { label: "Closing CTA heading", name: "cta_heading", widget: "string" }
 
   - name: "for_hotels_es"
-    label: "Para Hoteles (Español)"
+    label: "🏨 Para Hoteles 🇪🇸"
     files:
       - name: "for_hotels_es"
         label: "Para Hoteles"
@@ -109,7 +109,7 @@ collections:
           - { label: "Titular del CTA final", name: "cta_heading", widget: "string" }
 
   - name: "for_travel_partners_en"
-    label: "For Travel Partners (English)"
+    label: "🌍 For Travel Partners 🇬🇧"
     files:
       - name: "for_travel_partners_en"
         label: "For Travel Partners"
@@ -142,7 +142,7 @@ collections:
           - { label: "Closing CTA heading", name: "cta_heading", widget: "string" }
 
   - name: "for_travel_partners_es"
-    label: "Para Turoperadores (Español)"
+    label: "🌍 Para Turoperadores 🇪🇸"
     files:
       - name: "for_travel_partners_es"
         label: "Para Turoperadores"
@@ -175,7 +175,7 @@ collections:
           - { label: "Titular del CTA final", name: "cta_heading", widget: "string" }
 
   - name: "how_we_work_en"
-    label: "How We Work (English)"
+    label: "🤝 How We Work 🇬🇧"
     files:
       - name: "how_we_work_en"
         label: "How We Work"
@@ -197,7 +197,7 @@ collections:
           - { label: "Closing CTA heading", name: "cta_heading", widget: "string" }
 
   - name: "how_we_work_es"
-    label: "Cómo Trabajamos (Español)"
+    label: "🤝 Cómo Trabajamos 🇪🇸"
     files:
       - name: "how_we_work_es"
         label: "Cómo Trabajamos"
@@ -219,7 +219,7 @@ collections:
           - { label: "Titular del CTA final", name: "cta_heading", widget: "string" }
 
   - name: "hotel_network_en"
-    label: "Hotel Network (English)"
+    label: "🗺️ Hotel Network 🇬🇧"
     files:
       - name: "hotel_network_en"
         label: "Hotel Network"
@@ -235,7 +235,7 @@ collections:
           - { label: "Closing CTA heading", name: "cta_heading", widget: "string" }
 
   - name: "hotel_network_es"
-    label: "Red Hotelera (Español)"
+    label: "🗺️ Red Hotelera 🇪🇸"
     files:
       - name: "hotel_network_es"
         label: "Red Hotelera"
@@ -251,7 +251,7 @@ collections:
           - { label: "Titular del CTA final", name: "cta_heading", widget: "string" }
 
   - name: "events_en"
-    label: "Events (English)"
+    label: "📅 Events 🇬🇧"
     files:
       - name: "events_en"
         label: "Events"
@@ -285,7 +285,7 @@ collections:
           - { label: "Closing CTA button link", name: "cta_link", widget: "string" }
 
   - name: "events_es"
-    label: "Eventos (Español)"
+    label: "📅 Eventos 🇪🇸"
     files:
       - name: "events_es"
         label: "Eventos"
@@ -319,7 +319,7 @@ collections:
           - { label: "Enlace del botón CTA final", name: "cta_link", widget: "string" }
 
   - name: "about_en"
-    label: "Our Team (English)"
+    label: "👥 Our Team 🇬🇧"
     files:
       - name: "about_en"
         label: "Our Team"
@@ -332,7 +332,7 @@ collections:
           - { label: "Closing CTA heading", name: "cta_heading", widget: "string" }
 
   - name: "about_es"
-    label: "Nuestro Equipo (Español)"
+    label: "👥 Nuestro Equipo 🇪🇸"
     files:
       - name: "about_es"
         label: "Nuestro Equipo"
@@ -345,7 +345,7 @@ collections:
           - { label: "Titular del CTA final", name: "cta_heading", widget: "string" }
 
   - name: "contact_en"
-    label: "Contact (English)"
+    label: "📧 Contact 🇬🇧"
     files:
       - name: "contact_en"
         label: "Contact"
@@ -356,7 +356,7 @@ collections:
           - { label: "Hero subtitle", name: "lede", widget: "text" }
 
   - name: "contact_es"
-    label: "Contacto (Español)"
+    label: "📧 Contacto 🇪🇸"
     files:
       - name: "contact_es"
         label: "Contacto"
