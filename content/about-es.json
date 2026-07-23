@@ -3,5 +3,57 @@
   "headline": "El equipo detrás de tu negocio de grupos.",
   "lede": "Desde hace casi 20 años, un equipo multilingüe conecta a los hoteles europeos con los organizadores internacionales que les traen grupos — negociando en 12 idiomas, desde oficinas en Países Bajos y España.",
   "background_video": "/assets/video/Equipo.mp4",
+  "team_eyebrow": "Nuestro equipo",
+  "team_heading": "Personas consistentes, en una industria conocida por su rotación",
+  "team_intro": "Nuestro equipo constante te da un socio con el que puedes contar, año tras año.",
+  "departments": [
+    {
+      "name": "Team Series",
+      "color": "#0b3d5c",
+      "members": [
+        { "name": "René Geleynse", "photo": "/assets/img/team/rene-geleynse.jpg", "email": "rene@stream2.nl", "phone": "+31 6 27 37 93 09", "linkedin": "https://www.linkedin.com/in/renegeleynse/" },
+        { "name": "Adrian Sabariego", "photo": "/assets/img/team/adrian-sabariego.jpg", "email": "adrian@stream2.es", "phone": "+34 619 83 23 41", "linkedin": "https://www.linkedin.com/in/adrián-sabariego-romero-b5b8ba89/" },
+        { "name": "Alvaro Grande", "photo": "/assets/img/team/alvaro-grande.jpg", "email": "alvaro@stream2.eu", "phone": "+34 646 48 60 81", "linkedin": "https://www.linkedin.com/in/alvaro-grande-escanciano-98041a43/" },
+        { "name": "Delilah Hernandez", "photo": "/assets/img/team/delilah-hernandez.jpg", "email": "delilah@stream2.es", "phone": "+34 655 77 32 82", "linkedin": "https://www.linkedin.com/in/delilah-hernández-dienesen-75a8811b3/" }
+      ]
+    },
+    {
+      "name": "Team Ad-hoc",
+      "color": "#b5652f",
+      "members": [
+        { "name": "Fernando Barriales", "photo": "/assets/img/team/fernando-barriales.jpg", "email": "fernando@stream2.es", "phone": "+34 629 26 32 34", "linkedin": "https://www.linkedin.com/in/fernando-barriales-quintana/" },
+        { "name": "Cristina Vela", "photo": "/assets/img/team/cristina-vela.jpg", "email": "cris@stream2.es", "phone": "+34 652 58 49 10", "linkedin": "https://www.linkedin.com/in/cristina-vela-063a54190/" },
+        { "name": "Almudena Alvarez", "photo": "/assets/img/team/almudena-alvarez.jpg", "email": "almudena@stream2.es", "phone": "+34 665 76 58 80", "linkedin": "https://www.linkedin.com/in/almudena-alvarez-cervera-36770a7b/" },
+        { "name": "Lucía González", "photo": "/assets/img/team/lucia-gonzalez.jpg", "email": "lucia@stream2.es", "phone": "+34 657 49 65 63", "linkedin": "https://www.linkedin.com/in/lucía-gonzález-sáez-de-heredia/" }
+      ]
+    },
+    {
+      "name": "Team Asia",
+      "color": "#2f6f5e",
+      "members": [
+        { "name": "Wenqi Deng", "photo": "/assets/img/team/wenqi-deng.jpg", "email": "wenqi@stream2.eu", "phone": "+34 647 97 93 53", "linkedin": "https://www.linkedin.com/in/wenqi-deng-257a10113/" },
+        { "name": "Yogesh Sharma", "photo": "/assets/img/team/yogesh-sharma.jpg", "email": "yogesh@stream2.eu", "phone": "+34 657 58 93 93", "linkedin": "https://www.linkedin.com/in/yogesh-sharma-97a237181/" },
+        { "name": "Shweta Khabia", "photo": "/assets/img/team/shweta-khabia.jpg", "email": "shweta@stream2.eu", "phone": "+34 674 05 09 09", "linkedin": "https://www.linkedin.com/in/shweta-khabia-68b96416b/" }
+      ]
+    },
+    {
+      "name": "Team Operations",
+      "color": "#a68a2e",
+      "members": [
+        { "name": "Nadine Simons", "photo": "/assets/img/team/nadine-simons.jpg", "email": "nadine@stream2.nl", "phone": "+31 6 19 41 33 21", "linkedin": "https://www.linkedin.com/in/nadinesimons/" },
+        { "name": "Mario Irazusta", "photo": "/assets/img/team/mario-irazusta.jpg", "email": "mario@stream2.es", "phone": "+34 657 81 67 31", "linkedin": "https://www.linkedin.com/in/mario-irazusta-1a6b28b2/" },
+        { "name": "Maria Carvallo", "photo": "/assets/img/team/maria-carvallo.jpg", "email": "maria@stream2.es", "phone": "+34 615 52 25 15", "linkedin": "https://www.linkedin.com/in/maría-del-carmen-carvallo-bada-4014b5171/" }
+      ]
+    },
+    {
+      "name": "Team Product",
+      "color": "#7a3b5e",
+      "members": [
+        { "name": "Ziga Petek", "photo": "/assets/img/team/ziga-petek.jpg", "email": "ziga@stream2.nl", "phone": "+31 174 725 201", "linkedin": "https://www.linkedin.com/in/stream2zp/" },
+        { "name": "Cristina Alvarez", "photo": "/assets/img/team/cristina-alvarez.jpg", "email": "cristina@stream2.es", "phone": "+34 615 546 915", "linkedin": "https://www.linkedin.com/in/cristina-álvarez-ugena-gil-ortega-8394191a5/" },
+        { "name": "Aya Youssri", "photo": "/assets/img/team/aya-youssri.jpg", "email": "aya@stream2.eu", "phone": "+34 605 420 745", "linkedin": "https://www.linkedin.com/in/aya-youssri-335000211/" }
+      ]
+    }
+  ],
   "cta_heading": "¿Quieres trabajar con este equipo?"
 }

@@ -21,7 +21,7 @@ collections:
           - { label: "Primary button link", name: "cta1_href", widget: "string" }
           - { label: "Secondary button text", name: "cta2_label", widget: "string" }
           - { label: "Secondary button link", name: "cta2_href", widget: "string" }
-          - { label: "Background video or image", name: "background_video", widget: "file" }
+          - { label: "Background video or image", name: "background_video", widget: "file", media_folder: "assets/video", public_folder: "/assets/video" }
 
   - name: "home_es"
     label: "🏠 Inicio 🇪🇸"
@@ -38,7 +38,7 @@ collections:
           - { label: "Enlace botón principal", name: "cta1_href", widget: "string" }
           - { label: "Texto botón secundario", name: "cta2_label", widget: "string" }
           - { label: "Enlace botón secundario", name: "cta2_href", widget: "string" }
-          - { label: "Vídeo o imagen de fondo", name: "background_video", widget: "file" }
+          - { label: "Vídeo o imagen de fondo", name: "background_video", widget: "file", media_folder: "assets/video", public_folder: "/assets/video" }
 
   - name: "for_hotels_en"
     label: "🏨 For Hotels 🇬🇧"
@@ -52,11 +52,11 @@ collections:
           - { label: "Hero subtitle", name: "lede", widget: "text" }
           - { label: "Primary button text", name: "cta1_label", widget: "string" }
           - { label: "Secondary button text", name: "cta2_label", widget: "string" }
-          - { label: "Hero background video", name: "background_video", widget: "file" }
+          - { label: "Hero background video", name: "background_video", widget: "file", media_folder: "assets/video", public_folder: "/assets/video" }
           - { label: "Section 2 — eyebrow", name: "s2_eyebrow", widget: "string" }
           - { label: "Section 2 — heading", name: "s2_heading", widget: "string" }
           - { label: "Section 2 — body", name: "s2_body", widget: "text" }
-          - { label: "Section 2 — photo", name: "s2_photo", widget: "image" }
+          - { label: "Section 2 — photo", name: "s2_photo", widget: "image", media_folder: "assets/img/photos", public_folder: "/assets/img/photos" }
           - { label: "Section 2 — checklist", name: "s2_checklist", widget: "list" }
           - { label: "Our role — checklist", name: "role_checklist", widget: "list" }
           - label: "Kick-off process — steps"
@@ -68,7 +68,7 @@ collections:
               - { label: "Body", name: "body", widget: "text" }
           - { label: "Fit section — eyebrow", name: "fit_eyebrow", widget: "string" }
           - { label: "Fit section — heading", name: "fit_heading", widget: "string" }
-          - { label: "Fit section — background photo", name: "fit_photo", widget: "image" }
+          - { label: "Fit section — background photo", name: "fit_photo", widget: "image", media_folder: "assets/img/photos", public_folder: "/assets/img/photos" }
           - { label: "Fit section — checklist", name: "fit_checklist", widget: "list" }
           - { label: "Testimonial quote", name: "testimonial_quote", widget: "text" }
           - { label: "Testimonial attribution", name: "testimonial_cite", widget: "string" }
@@ -86,11 +86,11 @@ collections:
           - { label: "Subtítulo del hero", name: "lede", widget: "text" }
           - { label: "Texto botón principal", name: "cta1_label", widget: "string" }
           - { label: "Texto botón secundario", name: "cta2_label", widget: "string" }
-          - { label: "Vídeo de fondo del hero", name: "background_video", widget: "file" }
+          - { label: "Vídeo de fondo del hero", name: "background_video", widget: "file", media_folder: "assets/video", public_folder: "/assets/video" }
           - { label: "Sección 2 — eyebrow", name: "s2_eyebrow", widget: "string" }
           - { label: "Sección 2 — titular", name: "s2_heading", widget: "string" }
           - { label: "Sección 2 — texto", name: "s2_body", widget: "text" }
-          - { label: "Sección 2 — foto", name: "s2_photo", widget: "image" }
+          - { label: "Sección 2 — foto", name: "s2_photo", widget: "image", media_folder: "assets/img/photos", public_folder: "/assets/img/photos" }
           - { label: "Sección 2 — checklist", name: "s2_checklist", widget: "list" }
           - { label: "Nuestro papel — checklist", name: "role_checklist", widget: "list" }
           - label: "Proceso de arranque — pasos"
@@ -102,7 +102,7 @@ collections:
               - { label: "Texto", name: "body", widget: "text" }
           - { label: "Sección encaje — eyebrow", name: "fit_eyebrow", widget: "string" }
           - { label: "Sección encaje — titular", name: "fit_heading", widget: "string" }
-          - { label: "Sección encaje — foto de fondo", name: "fit_photo", widget: "image" }
+          - { label: "Sección encaje — foto de fondo", name: "fit_photo", widget: "image", media_folder: "assets/img/photos", public_folder: "/assets/img/photos" }
           - { label: "Sección encaje — checklist", name: "fit_checklist", widget: "list" }
           - { label: "Cita del testimonio", name: "testimonial_quote", widget: "text" }
           - { label: "Autoría del testimonio", name: "testimonial_cite", widget: "string" }
@@ -120,11 +120,11 @@ collections:
           - { label: "Hero subtitle", name: "lede", widget: "text" }
           - { label: "Primary button text", name: "cta1_label", widget: "string" }
           - { label: "Secondary button text", name: "cta2_label", widget: "string" }
-          - { label: "Hero background video", name: "background_video", widget: "file" }
+          - { label: "Hero background video", name: "background_video", widget: "file", media_folder: "assets/video", public_folder: "/assets/video" }
           - { label: "The problem — checklist", name: "problem_checklist", widget: "list" }
           - { label: "Section 2 — eyebrow", name: "s2_eyebrow", widget: "string" }
           - { label: "Section 2 — heading", name: "s2_heading", widget: "string" }
-          - { label: "Section 2 — photo", name: "s2_photo", widget: "image" }
+          - { label: "Section 2 — photo", name: "s2_photo", widget: "image", media_folder: "assets/img/photos", public_folder: "/assets/img/photos" }
           - { label: "Section 2 — checklist", name: "s2_checklist", widget: "list" }
           - label: "How it works — steps"
             name: "steps"
@@ -135,7 +135,7 @@ collections:
               - { label: "Body", name: "body", widget: "text" }
           - { label: "Section 3 — eyebrow", name: "s3_eyebrow", widget: "string" }
           - { label: "Section 3 — heading", name: "s3_heading", widget: "string" }
-          - { label: "Section 3 — photo", name: "s3_photo", widget: "image" }
+          - { label: "Section 3 — photo", name: "s3_photo", widget: "image", media_folder: "assets/img/photos", public_folder: "/assets/img/photos" }
           - { label: "Section 3 — checklist", name: "s3_checklist", widget: "list" }
           - { label: "Testimonial quote", name: "testimonial_quote", widget: "text" }
           - { label: "Testimonial attribution", name: "testimonial_cite", widget: "string" }
@@ -153,11 +153,11 @@ collections:
           - { label: "Subtítulo del hero", name: "lede", widget: "text" }
           - { label: "Texto botón principal", name: "cta1_label", widget: "string" }
           - { label: "Texto botón secundario", name: "cta2_label", widget: "string" }
-          - { label: "Vídeo de fondo del hero", name: "background_video", widget: "file" }
+          - { label: "Vídeo de fondo del hero", name: "background_video", widget: "file", media_folder: "assets/video", public_folder: "/assets/video" }
           - { label: "El problema — checklist", name: "problem_checklist", widget: "list" }
           - { label: "Sección 2 — eyebrow", name: "s2_eyebrow", widget: "string" }
           - { label: "Sección 2 — titular", name: "s2_heading", widget: "string" }
-          - { label: "Sección 2 — foto", name: "s2_photo", widget: "image" }
+          - { label: "Sección 2 — foto", name: "s2_photo", widget: "image", media_folder: "assets/img/photos", public_folder: "/assets/img/photos" }
           - { label: "Sección 2 — checklist", name: "s2_checklist", widget: "list" }
           - label: "Cómo funciona — pasos"
             name: "steps"
@@ -168,7 +168,7 @@ collections:
               - { label: "Texto", name: "body", widget: "text" }
           - { label: "Sección 3 — eyebrow", name: "s3_eyebrow", widget: "string" }
           - { label: "Sección 3 — titular", name: "s3_heading", widget: "string" }
-          - { label: "Sección 3 — foto", name: "s3_photo", widget: "image" }
+          - { label: "Sección 3 — foto", name: "s3_photo", widget: "image", media_folder: "assets/img/photos", public_folder: "/assets/img/photos" }
           - { label: "Sección 3 — checklist", name: "s3_checklist", widget: "list" }
           - { label: "Cita del testimonio", name: "testimonial_quote", widget: "text" }
           - { label: "Autoría del testimonio", name: "testimonial_cite", widget: "string" }
@@ -184,12 +184,12 @@ collections:
           - { label: "Hero eyebrow", name: "eyebrow", widget: "string" }
           - { label: "Hero headline", name: "headline", widget: "string" }
           - { label: "Hero subtitle", name: "lede", widget: "text" }
-          - { label: "Hero background video", name: "background_video", widget: "file" }
+          - { label: "Hero background video", name: "background_video", widget: "file", media_folder: "assets/video", public_folder: "/assets/video" }
           - label: "Teams"
             name: "teams"
             widget: "list"
             fields:
-              - { label: "Photo", name: "photo", widget: "image" }
+              - { label: "Photo", name: "photo", widget: "image", media_folder: "assets/img/canva", public_folder: "/assets/img/canva" }
               - { label: "Accent color", name: "color", widget: "string" }
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Nickname", name: "nickname", widget: "string" }
@@ -206,12 +206,12 @@ collections:
           - { label: "Eyebrow del hero", name: "eyebrow", widget: "string" }
           - { label: "Titular del hero", name: "headline", widget: "string" }
           - { label: "Subtítulo del hero", name: "lede", widget: "text" }
-          - { label: "Vídeo de fondo del hero", name: "background_video", widget: "file" }
+          - { label: "Vídeo de fondo del hero", name: "background_video", widget: "file", media_folder: "assets/video", public_folder: "/assets/video" }
           - label: "Equipos"
             name: "teams"
             widget: "list"
             fields:
-              - { label: "Foto", name: "photo", widget: "image" }
+              - { label: "Foto", name: "photo", widget: "image", media_folder: "assets/img/canva", public_folder: "/assets/img/canva" }
               - { label: "Color de acento", name: "color", widget: "string" }
               - { label: "Nombre", name: "name", widget: "string" }
               - { label: "Apodo", name: "nickname", widget: "string" }
@@ -227,10 +227,10 @@ collections:
         fields:
           - { label: "Hero eyebrow", name: "eyebrow", widget: "string" }
           - { label: "Hero headline", name: "headline", widget: "string" }
-          - { label: "Hero background video", name: "background_video", widget: "file" }
+          - { label: "Hero background video", name: "background_video", widget: "file", media_folder: "assets/video", public_folder: "/assets/video" }
           - { label: "Section 2 — eyebrow", name: "s2_eyebrow", widget: "string" }
           - { label: "Section 2 — heading", name: "s2_heading", widget: "string" }
-          - { label: "Section 2 — background video", name: "s2_background_video", widget: "file" }
+          - { label: "Section 2 — background video", name: "s2_background_video", widget: "file", media_folder: "assets/video", public_folder: "/assets/video" }
           - { label: "Section 2 — checklist", name: "s2_checklist", widget: "list" }
           - { label: "Closing CTA heading", name: "cta_heading", widget: "string" }
 
@@ -243,10 +243,10 @@ collections:
         fields:
           - { label: "Eyebrow del hero", name: "eyebrow", widget: "string" }
           - { label: "Titular del hero", name: "headline", widget: "string" }
-          - { label: "Vídeo de fondo del hero", name: "background_video", widget: "file" }
+          - { label: "Vídeo de fondo del hero", name: "background_video", widget: "file", media_folder: "assets/video", public_folder: "/assets/video" }
           - { label: "Sección 2 — eyebrow", name: "s2_eyebrow", widget: "string" }
           - { label: "Sección 2 — titular", name: "s2_heading", widget: "string" }
-          - { label: "Sección 2 — vídeo de fondo", name: "s2_background_video", widget: "file" }
+          - { label: "Sección 2 — vídeo de fondo", name: "s2_background_video", widget: "file", media_folder: "assets/video", public_folder: "/assets/video" }
           - { label: "Sección 2 — checklist", name: "s2_checklist", widget: "list" }
           - { label: "Titular del CTA final", name: "cta_heading", widget: "string" }
 
@@ -260,7 +260,7 @@ collections:
           - { label: "Hero eyebrow", name: "eyebrow", widget: "string" }
           - { label: "Hero headline", name: "headline", widget: "string" }
           - { label: "Hero subtitle", name: "lede", widget: "text" }
-          - { label: "Hero background video", name: "background_video", widget: "file" }
+          - { label: "Hero background video", name: "background_video", widget: "file", media_folder: "assets/video", public_folder: "/assets/video" }
           - label: "Events"
             name: "events"
             widget: "list"
@@ -268,7 +268,7 @@ collections:
               - { label: "Date — day/range", name: "day", widget: "string" }
               - { label: "Date — month/year", name: "month", widget: "string" }
               - { label: "Logo type", name: "logo_type", widget: "select", options: ["image", "text"], default: "image" }
-              - { label: "Logo image", name: "logo", widget: "image", required: false }
+              - { label: "Logo image", name: "logo", widget: "image", required: false, media_folder: "assets/img/events", public_folder: "/assets/img/events" }
               - { label: "Logo fallback text (if no image)", name: "logo_text", widget: "string", required: false }
               - { label: "Dark logo box", name: "logo_dark", widget: "boolean", default: false }
               - { label: "Event name", name: "name", widget: "string" }
@@ -280,7 +280,7 @@ collections:
                 fields:
                   - { label: "Name", name: "name", widget: "string" }
                   - { label: "Email", name: "email", widget: "string" }
-                  - { label: "Photo", name: "photo", widget: "image" }
+                  - { label: "Photo", name: "photo", widget: "image", media_folder: "assets/img/team/avatars", public_folder: "/assets/img/team/avatars" }
           - { label: "Closing CTA heading", name: "cta_heading", widget: "string" }
           - { label: "Closing CTA button link", name: "cta_link", widget: "string" }
 
@@ -294,7 +294,7 @@ collections:
           - { label: "Eyebrow del hero", name: "eyebrow", widget: "string" }
           - { label: "Titular del hero", name: "headline", widget: "string" }
           - { label: "Subtítulo del hero", name: "lede", widget: "text" }
-          - { label: "Vídeo de fondo del hero", name: "background_video", widget: "file" }
+          - { label: "Vídeo de fondo del hero", name: "background_video", widget: "file", media_folder: "assets/video", public_folder: "/assets/video" }
           - label: "Eventos"
             name: "events"
             widget: "list"
@@ -302,7 +302,7 @@ collections:
               - { label: "Fecha — día/rango", name: "day", widget: "string" }
               - { label: "Fecha — mes/año", name: "month", widget: "string" }
               - { label: "Tipo de logo", name: "logo_type", widget: "select", options: ["image", "text"], default: "image" }
-              - { label: "Logo (imagen)", name: "logo", widget: "image", required: false }
+              - { label: "Logo (imagen)", name: "logo", widget: "image", required: false, media_folder: "assets/img/events", public_folder: "/assets/img/events" }
               - { label: "Texto alternativo (si no hay imagen)", name: "logo_text", widget: "string", required: false }
               - { label: "Caja de logo oscura", name: "logo_dark", widget: "boolean", default: false }
               - { label: "Nombre del evento", name: "name", widget: "string" }
@@ -314,7 +314,7 @@ collections:
                 fields:
                   - { label: "Nombre", name: "name", widget: "string" }
                   - { label: "Email", name: "email", widget: "string" }
-                  - { label: "Foto", name: "photo", widget: "image" }
+                  - { label: "Foto", name: "photo", widget: "image", media_folder: "assets/img/team/avatars", public_folder: "/assets/img/team/avatars" }
           - { label: "Titular del CTA final", name: "cta_heading", widget: "string" }
           - { label: "Enlace del botón CTA final", name: "cta_link", widget: "string" }
 
@@ -328,7 +328,25 @@ collections:
           - { label: "Hero eyebrow", name: "eyebrow", widget: "string" }
           - { label: "Hero headline", name: "headline", widget: "string" }
           - { label: "Hero subtitle", name: "lede", widget: "text" }
-          - { label: "Hero background video", name: "background_video", widget: "file" }
+          - { label: "Hero background video", name: "background_video", widget: "file", media_folder: "assets/video", public_folder: "/assets/video" }
+          - { label: "Team section — eyebrow", name: "team_eyebrow", widget: "string" }
+          - { label: "Team section — heading", name: "team_heading", widget: "string" }
+          - { label: "Team section — intro", name: "team_intro", widget: "text" }
+          - label: "Departments"
+            name: "departments"
+            widget: "list"
+            fields:
+              - { label: "Department name", name: "name", widget: "string" }
+              - { label: "Accent color", name: "color", widget: "string" }
+              - label: "Members"
+                name: "members"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Photo", name: "photo", widget: "image", media_folder: "assets/img/team", public_folder: "/assets/img/team" }
+                  - { label: "Email", name: "email", widget: "string" }
+                  - { label: "Phone", name: "phone", widget: "string", required: false }
+                  - { label: "LinkedIn URL", name: "linkedin", widget: "string", required: false }
           - { label: "Closing CTA heading", name: "cta_heading", widget: "string" }
 
   - name: "about_es"
@@ -341,7 +359,25 @@ collections:
           - { label: "Eyebrow del hero", name: "eyebrow", widget: "string" }
           - { label: "Titular del hero", name: "headline", widget: "string" }
           - { label: "Subtítulo del hero", name: "lede", widget: "text" }
-          - { label: "Vídeo de fondo del hero", name: "background_video", widget: "file" }
+          - { label: "Vídeo de fondo del hero", name: "background_video", widget: "file", media_folder: "assets/video", public_folder: "/assets/video" }
+          - { label: "Sección equipo — eyebrow", name: "team_eyebrow", widget: "string" }
+          - { label: "Sección equipo — titular", name: "team_heading", widget: "string" }
+          - { label: "Sección equipo — intro", name: "team_intro", widget: "text" }
+          - label: "Departamentos"
+            name: "departments"
+            widget: "list"
+            fields:
+              - { label: "Nombre del departamento", name: "name", widget: "string" }
+              - { label: "Color de acento", name: "color", widget: "string" }
+              - label: "Miembros"
+                name: "members"
+                widget: "list"
+                fields:
+                  - { label: "Nombre", name: "name", widget: "string" }
+                  - { label: "Foto", name: "photo", widget: "image", media_folder: "assets/img/team", public_folder: "/assets/img/team" }
+                  - { label: "Email", name: "email", widget: "string" }
+                  - { label: "Teléfono", name: "phone", widget: "string", required: false }
+                  - { label: "URL de LinkedIn", name: "linkedin", widget: "string", required: false }
           - { label: "Titular del CTA final", name: "cta_heading", widget: "string" }
 
   - name: "contact_en"

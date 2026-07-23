@@ -172,18 +172,29 @@ section { padding: 64px 0; }
 .team-linkedin { display: inline-flex; align-items: center; justify-content: center; margin-top: 6px; color: var(--ink-soft); }
 .team-linkedin:hover { color: var(--brand); }
 .team-linkedin svg { width: 14px; height: 14px; }
-.team-avatar { position: relative; width: 100%; aspect-ratio: 1; border-radius: 50%; background: var(--paper-soft); display: flex; align-items: center; justify-content: center; color: var(--brand); font-weight: 700; font-size: 1.3rem; margin-bottom: 14px; overflow: hidden; padding: 5px; border: 1.5px solid var(--rule); transition: border-color 0.2s ease; }
-.team-avatar:hover, .team-avatar:focus-within { border-color: var(--brand); }
-.team-avatar img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
-.team-contact { position: absolute; inset: 5px; border-radius: 50%; background: rgba(11,61,92,0.88); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; padding: 8px; opacity: 0; transition: opacity 0.2s ease; }
-.team-avatar:hover .team-contact, .team-avatar:focus-within .team-contact { opacity: 1; }
-.team-contact a { color: #fff; font-size: 0.68rem; font-weight: 600; line-height: 1.3; text-align: center; word-break: break-word; text-decoration: none; }
-.team-contact a:hover { text-decoration: underline; }
 .team-card strong { display: block; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink-soft); }
 .team-card span { font-size: 0.8rem; color: var(--ink-soft); }
-@media (hover: none) {
-  .team-contact { position: static; opacity: 1; background: none; padding: 2px 0 0; gap: 0; }
-  .team-contact a { color: var(--brand); font-size: 0.72rem; }
+
+/* Desktop: circular photo, contact info on hover overlay */
+.team-avatar { position: relative; width: 100%; aspect-ratio: 1; border-radius: 50%; margin-bottom: 14px; border: 1.5px solid var(--rule); transition: border-color 0.2s ease; cursor: default; }
+.team-avatar:hover, .team-avatar:focus-within { border-color: var(--brand); }
+.team-avatar-inner { position: relative; width: 100%; height: 100%; }
+.team-avatar-face { position: absolute; inset: 0; border-radius: 50%; overflow: hidden; }
+.team-avatar-front img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.team-avatar-back { inset: 5px; background: rgba(11,61,92,0.88); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; padding: 8px; opacity: 0; transition: opacity 0.2s ease; }
+.team-avatar:hover .team-avatar-back, .team-avatar:focus-within .team-avatar-back { opacity: 1; }
+.team-avatar-back a { color: #fff; font-size: 0.68rem; font-weight: 600; line-height: 1.3; text-align: center; word-break: break-word; text-decoration: none; }
+.team-avatar-back a:hover { text-decoration: underline; }
+
+/* Mobile: full uncropped photo, tap to flip and reveal contact info */
+@media (max-width: 720px) {
+  .team-avatar { aspect-ratio: 2 / 3; border-radius: 12px; perspective: 900px; cursor: pointer; }
+  .team-avatar-inner { transition: transform 0.5s ease; transform-style: preserve-3d; }
+  .team-avatar.is-flipped .team-avatar-inner { transform: rotateY(180deg); }
+  .team-avatar-face { border-radius: 12px; backface-visibility: hidden; }
+  .team-avatar-front img { object-fit: contain; background: var(--paper-soft); }
+  .team-avatar-back { position: absolute; inset: 0; opacity: 1; transform: rotateY(180deg); background: var(--brand); }
+  .team-avatar-back a { font-size: 0.78rem; }
 }
 
 /* ---------- Map ---------- */
