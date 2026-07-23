@@ -12,17 +12,31 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Forms post to Netlify Forms once deployed there (data-netlify="true").
-  // ponytail: no backend in this repo — submit is left to Netlify's own handling;
-  // we only show the on-page confirmation message instead of navigating away.
+  // A plain POST navigates away before the on-page "thank you" message is ever
+  // seen, so submit via fetch() instead and stay on the page either way.
   document.querySelectorAll("form.contact-form").forEach((form) => {
     form.addEventListener("submit", (e) => {
+      e.preventDefault();
       const success = form.parentElement.querySelector(".form-success");
       if (window.location.protocol === "file:") {
-        // Local file preview: Netlify isn't there to catch the POST, so fake it.
-        e.preventDefault();
+        // Local file preview: no Netlify backend to POST to.
         form.reset();
+        if (success) success.style.display = "block";
+        return;
       }
-      if (success) success.style.display = "block";
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(new FormData(form)).toString(),
+      })
+        .then((res) => {
+          if (!res.ok) throw new Error("submit failed");
+          form.reset();
+          if (success) success.style.display = "block";
+        })
+        .catch(() => {
+          alert("Something went wrong sending your message — please email us directly or try again.");
+        });
     });
   });
 });
