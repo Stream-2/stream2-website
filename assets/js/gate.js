@@ -3,7 +3,22 @@
 (function () {
   var KEY = "s2_preview_unlocked";
   var PASSWORD = "stream2preview";
-  if (sessionStorage.getItem(KEY) === "1") return;
+
+  // Mobile browsers frequently refuse to start/continue a <video autoplay> that
+  // began while an ancestor had visibility:hidden (which the gate does below) —
+  // the play() attempt silently fails and never retries on its own. Explicitly
+  // re-kicking playback once the page is actually visible works around that.
+  function restartHeroVideos() {
+    document.querySelectorAll(".hero-video-bg").forEach(function (v) {
+      var p = v.play();
+      if (p && p.catch) p.catch(function () {});
+    });
+  }
+
+  if (sessionStorage.getItem(KEY) === "1") {
+    document.addEventListener("DOMContentLoaded", restartHeroVideos);
+    return;
+  }
   document.documentElement.style.visibility = "hidden";
 
   document.addEventListener("DOMContentLoaded", function () {
@@ -26,6 +41,7 @@
       if (input.value === PASSWORD) {
         sessionStorage.setItem(KEY, "1");
         overlay.remove();
+        restartHeroVideos();
       } else {
         error.style.display = "block";
       }

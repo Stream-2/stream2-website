@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "assets"
-public_folder: "/assets"
+media_folder: "assets/img/team"
+public_folder: "/assets/img/team"
 
 collections:
   - name: "home_en"
