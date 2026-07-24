@@ -4,7 +4,7 @@
 
   var COPY = {
     en: {
-      text: 'We use our own and third-party cookies for analytics purposes by analysing your browsing habits, to personalise content based on your preferences, and for advertising purposes. For more information, see our <a href="/cookie-policy.html">Cookie Policy</a>. You can accept or reject all cookies in bulk, or accept them selectively, change your selection, or reject their use via "Cookie Settings".',
+      text: 'We use necessary cookies to run this site, and — only with your consent — may use analytics, personalisation or advertising cookies in future. For more information, see our <a href="/cookie-policy.html">Cookie Policy</a>. You can accept or reject all cookies in bulk, or accept them selectively, change your selection, or reject their use via "Cookie Settings".',
       acceptAll: "Accept all",
       rejectAll: "Reject all",
       settings: "Cookie Settings",
@@ -16,7 +16,7 @@
       advertising: "Advertising cookies",
     },
     es: {
-      text: 'Utilizamos cookies propias y de terceros con finalidades analíticas mediante el análisis del tráfico web, para personalizar el contenido según sus preferencias y con finalidades publicitarias. Para más información, consulte nuestra <a href="/es/politica-cookies.html">Política de Cookies</a>. Puede aceptar o rechazar todas las cookies en bloque, o aceptarlas de forma concreta, modificar su selección o rechazar su uso desde "Configuración de Cookies".',
+      text: 'Utilizamos cookies necesarias para el funcionamiento de la web, y — solo con su consentimiento — podríamos utilizar en el futuro cookies analíticas, de personalización o publicitarias. Para más información, consulte nuestra <a href="/es/politica-cookies.html">Política de Cookies</a>. Puede aceptar o rechazar todas las cookies en bloque, o aceptarlas de forma concreta, modificar su selección o rechazar su uso desde "Configuración de Cookies".',
       acceptAll: "Aceptar todas",
       rejectAll: "Rechazar todas",
       settings: "Configuración de Cookies",
