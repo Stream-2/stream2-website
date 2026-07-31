@@ -1,0 +1,12 @@
+{
+  "name": "Stream2",
+  "short_name": "Stream2",
+  "icons": [
+    { "src": "/assets/img/favicon-32x32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/assets/img/favicon-16x16.png", "sizes": "16x16", "type": "image/png" },
+    { "src": "/assets/img/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#0b3d5c",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

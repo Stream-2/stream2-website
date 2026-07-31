@@ -45,8 +45,56 @@ function applyContent(data) {
     var key = el.getAttribute("data-cms-list");
     var type = el.getAttribute("data-cms-list-type") || "checklist";
     var items = data[key];
-    if (Array.isArray(items)) renderList(el, items, type);
+    if (Array.isArray(items)) {
+      renderList(el, items, type);
+      if (type === "events") injectEventsSchema(items);
+    }
   });
+}
+
+// Month abbreviations as they appear in event data, EN + ES, mapped to 1-12.
+var MONTH_MAP = {
+  ene: 1, jan: 1, feb: 2, mar: 3, abr: 4, apr: 4, may: 5, jun: 6,
+  jul: 7, ago: 8, aug: 8, sep: 9, oct: 10, nov: 11, dic: 12, dec: 12,
+};
+
+// Event day/month are display strings ("20–24", "ene 2027"), not ISO dates.
+// Parse defensively -- schema.org Event needs real dates, but wrong dates are
+// worse than no schema at all, so any unrecognised format is skipped.
+function parseEventDate(dayStr, monthStr, useEnd) {
+  var dayParts = String(dayStr).split(/[–-]/).map(function (s) { return s.trim(); });
+  var day = useEnd ? dayParts[dayParts.length - 1] : dayParts[0];
+  var monthParts = String(monthStr).trim().split(/\s+/);
+  var monthNum = MONTH_MAP[(monthParts[0] || "").toLowerCase().slice(0, 3)];
+  var year = monthParts[1];
+  if (!monthNum || !year || !/^\d{1,2}$/.test(day)) return null;
+  return year + "-" + String(monthNum).padStart(2, "0") + "-" + day.padStart(2, "0");
+}
+
+function injectEventsSchema(events) {
+  document.querySelectorAll('script[data-cms-schema="events"]').forEach(function (el) { el.remove(); });
+  var schema = events
+    .map(function (e) {
+      var start = parseEventDate(e.day, e.month, false);
+      if (!start) return null;
+      return {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        name: e.name,
+        startDate: start,
+        endDate: parseEventDate(e.day, e.month, true) || start,
+        eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+        location: { "@type": "Place", name: e.city, address: e.city },
+        organizer: { "@type": "Organization", name: "Stream2", url: "https://www.stream2.nl/" },
+      };
+    })
+    .filter(Boolean);
+  if (!schema.length) return;
+  var script = document.createElement("script");
+  script.type = "application/ld+json";
+  script.setAttribute("data-cms-schema", "events");
+  script.textContent = JSON.stringify(schema);
+  document.head.appendChild(script);
 }
 
 // Rebuilds a repeating block of markup from a JSON array. Each "type" mirrors one
