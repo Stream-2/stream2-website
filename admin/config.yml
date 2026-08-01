@@ -21,7 +21,6 @@ collections:
           - { label: "Primary button link", name: "cta1_href", widget: "string" }
           - { label: "Secondary button text", name: "cta2_label", widget: "string" }
           - { label: "Secondary button link", name: "cta2_href", widget: "string" }
-          - { label: "Background video or image", name: "background_video", widget: "file", media_folder: "assets/video", public_folder: "/assets/video" }
 
   - name: "home_es"
     label: "🏠 Inicio 🇪🇸"
@@ -38,7 +37,6 @@ collections:
           - { label: "Enlace botón principal", name: "cta1_href", widget: "string" }
           - { label: "Texto botón secundario", name: "cta2_label", widget: "string" }
           - { label: "Enlace botón secundario", name: "cta2_href", widget: "string" }
-          - { label: "Vídeo o imagen de fondo", name: "background_video", widget: "file", media_folder: "assets/video", public_folder: "/assets/video" }
 
   - name: "for_hotels_en"
     label: "🏨 For Hotels 🇬🇧"
