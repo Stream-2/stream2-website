@@ -37,20 +37,20 @@
       ]
     },
     {
-      "name": "Team Operations",
-      "color": "#a68a2e",
-      "members": [
-        { "name": "Nadine Simons", "photo": "/assets/img/team/nadine-simons.jpg", "email": "nadine@stream2.nl", "phone": "+31 6 19 41 33 21", "linkedin": "https://www.linkedin.com/in/nadinesimons/" },
-        { "name": "Mario Irazusta", "photo": "/assets/img/team/mario-irazusta.jpg", "email": "mario@stream2.es", "phone": "+34 657 81 67 31", "linkedin": "https://www.linkedin.com/in/mario-irazusta-1a6b28b2/" }
-      ]
-    },
-    {
       "name": "Team Product",
       "color": "#7a3b5e",
       "members": [
         { "name": "Ziga Petek", "photo": "/assets/img/team/ziga-petek.jpg", "email": "ziga@stream2.nl", "phone": "+31 174 725 201", "linkedin": "https://www.linkedin.com/in/stream2zp/" },
         { "name": "Cristina Alvarez", "photo": "/assets/img/team/cristina-alvarez.jpg", "email": "cristina@stream2.es", "phone": "+34 615 546 915", "linkedin": "https://www.linkedin.com/in/cristina-álvarez-ugena-gil-ortega-8394191a5/" },
         { "name": "Aya Youssri", "photo": "/assets/img/team/aya-youssri.jpg", "email": "aya@stream2.eu", "phone": "+34 605 420 745", "linkedin": "https://www.linkedin.com/in/aya-youssri-335000211/" }
+      ]
+    },
+    {
+      "name": "Team Operations",
+      "color": "#a68a2e",
+      "members": [
+        { "name": "Nadine Simons", "photo": "/assets/img/team/nadine-simons.jpg", "email": "nadine@stream2.nl", "phone": "+31 6 19 41 33 21", "linkedin": "https://www.linkedin.com/in/nadinesimons/" },
+        { "name": "Mario Irazusta", "photo": "/assets/img/team/mario-irazusta.jpg", "email": "mario@stream2.es", "phone": "+34 657 81 67 31", "linkedin": "https://www.linkedin.com/in/mario-irazusta-1a6b28b2/" }
       ]
     }
   ],
