@@ -34,9 +34,20 @@ document.addEventListener("DOMContentLoaded", async () => {
   const { cities } = await cityRes.json();
 
   const map = L.map(el, { scrollWheelZoom: false, minZoom: 3, maxZoom: 17 }).setView([50, 10], 4);
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
-    attribution: "© OpenStreetMap, © CARTO",
-  }).addTo(map);
+  // OpenFreeMap only serves vector tiles (no plain raster XYZ endpoint), so the
+  // base layer goes through MapLibre GL via the leaflet binding rather than a
+  // plain L.tileLayer -- same "Positron" light-grey look as the old CARTO
+  // layer, but free/unlimited and with no API key to manage. Wrapped so a CDN
+  // hiccup (blocked script, offline) loses the background tiles, not the
+  // coverage dots -- those are the actual content.
+  try {
+    L.maplibreGL({
+      style: "https://tiles.openfreemap.org/styles/positron",
+      attribution: "© OpenFreeMap, © OpenMapTiles, © OpenStreetMap contributors",
+    }).addTo(map);
+  } catch (err) {
+    console.error("Base map tiles failed to load:", err);
+  }
 
   cities.forEach((city) => {
     const color = COUNTRY_COLORS[city.country] || DEFAULT_DOT_COLOR;

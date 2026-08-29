@@ -41,8 +41,7 @@
       "color": "#a68a2e",
       "members": [
         { "name": "Nadine Simons", "photo": "/assets/img/team/nadine-simons.jpg", "email": "nadine@stream2.nl", "phone": "+31 6 19 41 33 21", "linkedin": "https://www.linkedin.com/in/nadinesimons/" },
-        { "name": "Mario Irazusta", "photo": "/assets/img/team/mario-irazusta.jpg", "email": "mario@stream2.es", "phone": "+34 657 81 67 31", "linkedin": "https://www.linkedin.com/in/mario-irazusta-1a6b28b2/" },
-        { "name": "Maria Carvallo", "photo": "/assets/img/team/maria-carvallo.jpg", "email": "maria@stream2.es", "phone": "+34 615 52 25 15", "linkedin": "https://www.linkedin.com/in/maría-del-carmen-carvallo-bada-4014b5171/" }
+        { "name": "Mario Irazusta", "photo": "/assets/img/team/mario-irazusta.jpg", "email": "mario@stream2.es", "phone": "+34 657 81 67 31", "linkedin": "https://www.linkedin.com/in/mario-irazusta-1a6b28b2/" }
       ]
     },
     {

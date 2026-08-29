@@ -54,7 +54,6 @@ collections:
           - { label: "Section 2 — eyebrow", name: "s2_eyebrow", widget: "string" }
           - { label: "Section 2 — heading", name: "s2_heading", widget: "string" }
           - { label: "Section 2 — body", name: "s2_body", widget: "text" }
-          - { label: "Section 2 — photo", name: "s2_photo", widget: "image", media_folder: "assets/img/photos", public_folder: "/assets/img/photos" }
           - { label: "Section 2 — checklist", name: "s2_checklist", widget: "list" }
           - { label: "Our role — checklist", name: "role_checklist", widget: "list" }
           - label: "Kick-off process — steps"
@@ -88,7 +87,6 @@ collections:
           - { label: "Sección 2 — eyebrow", name: "s2_eyebrow", widget: "string" }
           - { label: "Sección 2 — titular", name: "s2_heading", widget: "string" }
           - { label: "Sección 2 — texto", name: "s2_body", widget: "text" }
-          - { label: "Sección 2 — foto", name: "s2_photo", widget: "image", media_folder: "assets/img/photos", public_folder: "/assets/img/photos" }
           - { label: "Sección 2 — checklist", name: "s2_checklist", widget: "list" }
           - { label: "Nuestro papel — checklist", name: "role_checklist", widget: "list" }
           - label: "Proceso de arranque — pasos"

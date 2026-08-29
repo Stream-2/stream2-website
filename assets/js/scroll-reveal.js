@@ -23,4 +23,22 @@
     { threshold: 0.12, rootMargin: "0px 0px -60px 0px" }
   );
   sections.forEach(function (s) { observer.observe(s); });
+
+  // Foundation-blocks illustration (For Hotels): same one-shot reveal, its own
+  // observer since it isn't a <section> and fires independently of the above.
+  var scenes = document.querySelectorAll(".foundation-scene");
+  if (scenes.length) {
+    var sceneObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+            sceneObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+    scenes.forEach(function (s) { sceneObserver.observe(s); });
+  }
 })();
