@@ -67,19 +67,60 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 }
 
 /* ---------- Header ---------- */
-.site-header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+.site-header {
+  position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.92); backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 1px 0 rgba(11,61,92,0.03);
+  transition: box-shadow 0.35s ease, background-color 0.35s ease;
+}
+.site-header.scrolled { background: rgba(255,255,255,0.96); box-shadow: 0 16px 32px -22px rgba(11,61,92,0.4); }
 .site-header .bar { display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; max-width: var(--container); margin: 0 auto; gap: 20px; }
-.brand-logo { height: 60px; width: auto; display: inline-flex; }
+
+/* logo: gentle 3D rock, never edge-on (a flat image at rotateY 90deg vanishes,
+   so the wobble is capped well short of that on both sides) */
+.brand-logo { height: 60px; width: auto; display: inline-flex; perspective: 480px; }
+.brand-logo .logo-spin { height: 100%; width: auto; transform-style: preserve-3d; animation: logoWobble 5s ease-in-out infinite; }
+.brand-logo:hover .logo-spin { animation-duration: 1.4s; }
 .brand-logo img { height: 100%; width: auto; display: block; }
+@keyframes logoWobble { 0%, 100% { transform: rotateY(-18deg); } 50% { transform: rotateY(18deg); } }
 .site-footer .brand-logo { height: 72px; }
-.main-nav { display: flex; align-items: center; gap: 26px; }
-.main-nav a { text-decoration: none; font-size: 0.95rem; font-weight: 500; color: var(--ink-soft); white-space: nowrap; }
-.main-nav a:hover, .main-nav a[aria-current="page"] { color: var(--brand); }
+
+/* nav: each link flips in 3D on hover, revealing a brand-blue duplicate */
+.main-nav { display: flex; align-items: center; gap: 8px; }
+.main-nav a {
+  position: relative; display: inline-block; text-decoration: none;
+  font-size: 0.95rem; font-weight: 500; color: var(--ink-soft); white-space: nowrap;
+  padding: 8px 8px; perspective: 400px;
+}
+.main-nav a .flip { position: relative; display: block; transform-style: preserve-3d; transition: transform 0.45s cubic-bezier(0.2, 1, 0.3, 1); }
+.main-nav a .flip::before {
+  content: attr(data-label); position: absolute; inset: 0; transform: rotateX(90deg) translateY(9px);
+  transform-origin: bottom; color: var(--brand); font-weight: 600; backface-visibility: hidden;
+}
+.main-nav a .flip span { display: block; backface-visibility: hidden; }
+.main-nav a:hover .flip { transform: rotateX(-90deg) translateY(-9px); }
+.main-nav a[aria-current="page"] { color: var(--brand); font-weight: 600; }
+.main-nav a[aria-current="page"]::after { content: ""; position: absolute; left: 8px; right: 8px; bottom: 2px; height: 2px; background: var(--accent-hotel); border-radius: 2px; }
+
 .header-actions { display: flex; align-items: center; gap: 14px; }
 .lang-switch a { font-size: 0.85rem; font-weight: 700; text-decoration: none; color: var(--ink-soft); padding: 4px 6px; }
 .lang-switch a[aria-current="true"] { color: var(--brand); }
 .menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 6px; }
 .menu-toggle span { display: block; width: 22px; height: 2px; background: var(--ink); margin: 5px 0; }
+
+/* header CTA: tilts toward the cursor, magnet-style */
+.header-actions .btn-primary {
+  --rx: 0deg; --ry: 0deg;
+  transform: perspective(400px) rotateX(var(--rx)) rotateY(var(--ry));
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.header-actions .btn-primary:hover { box-shadow: 0 12px 22px -8px rgba(11,61,92,0.45); }
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-logo .logo-spin { animation: none; }
+  .main-nav a .flip { transition: none; }
+  .header-actions .btn-primary { transition: none; transform: none !important; }
+}
 
 /* ---------- Buttons ---------- */
 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 24px; border-radius: 6px; font-weight: 600; font-size: 0.95rem; text-decoration: none; border: 1px solid transparent; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease; }

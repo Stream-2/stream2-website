@@ -76,6 +76,32 @@ function wireHeader() {
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
     });
   }
+
+  // Header gains a shadow/depth once the page has scrolled, so it reads as
+  // floating above the content rather than flush against it.
+  if (header) {
+    const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 12);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+  }
+
+  // "Get in touch" tilts toward the cursor. Skipped entirely under
+  // prefers-reduced-motion rather than just relying on the CSS override,
+  // so no mousemove work happens for users who opted out of motion.
+  const cta = document.querySelector(".header-actions .btn-primary");
+  if (cta && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    cta.addEventListener("mousemove", (e) => {
+      const r = cta.getBoundingClientRect();
+      const px = (e.clientX - r.left) / r.width - 0.5;
+      const py = (e.clientY - r.top) / r.height - 0.5;
+      cta.style.setProperty("--ry", `${px * 16}deg`);
+      cta.style.setProperty("--rx", `${py * -16}deg`);
+    });
+    cta.addEventListener("mouseleave", () => {
+      cta.style.setProperty("--ry", "0deg");
+      cta.style.setProperty("--rx", "0deg");
+    });
+  }
 }
 
 document.addEventListener("DOMContentLoaded", includePartials);
