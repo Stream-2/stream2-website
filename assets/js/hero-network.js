@@ -54,3 +54,30 @@
   draw();
   window.addEventListener("resize", draw);
 })();
+
+// Holographic hover on each booking ticket: tilts toward the cursor and
+// tracks a glare highlight to the cursor position. Skipped under
+// prefers-reduced-motion and on touch (no real hover there, and CSS
+// :hover can stick after a tap).
+(function () {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (window.matchMedia("(hover: none)").matches) return;
+
+  document.querySelectorAll(".hero-ticket").forEach(function (ticket) {
+    var inner = ticket.querySelector(".ticket-inner");
+    if (!inner) return;
+    ticket.addEventListener("mousemove", function (e) {
+      var r = inner.getBoundingClientRect();
+      var px = (e.clientX - r.left) / r.width;
+      var py = (e.clientY - r.top) / r.height;
+      inner.style.setProperty("--hover-ry", `${(px - 0.5) * 22}deg`);
+      inner.style.setProperty("--hover-rx", `${(py - 0.5) * -22}deg`);
+      inner.style.setProperty("--glare-x", `${px * 100}%`);
+      inner.style.setProperty("--glare-y", `${py * 100}%`);
+    });
+    ticket.addEventListener("mouseleave", function () {
+      inner.style.setProperty("--hover-rx", "0deg");
+      inner.style.setProperty("--hover-ry", "0deg");
+    });
+  });
+})();
