@@ -348,6 +348,7 @@ section { padding: 64px 0; }
 .team-dept:last-child { margin-bottom: 0; }
 .team-dept-heading { font-size: 0.74rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dept-color, var(--brand)); margin: 0 0 18px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
 .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 16px; }
+.team-grid--compact { grid-template-columns: repeat(3, minmax(130px, 1fr)); }
 .team-card { text-align: center; }
 .team-linkedin { display: inline-flex; align-items: center; justify-content: center; margin-top: 6px; color: var(--ink-soft); }
 .team-linkedin:hover { color: var(--brand); }

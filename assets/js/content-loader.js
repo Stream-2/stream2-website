@@ -158,7 +158,7 @@ function renderList(container, items, type) {
           return (
             '<div class="team-dept" style="--dept-color:' + escapeHtml(item.color) + ';">' +
             '<h3 class="team-dept-heading">' + escapeHtml(item.name) + "</h3>" +
-            '<div class="team-grid">' +
+            '<div class="team-grid' + (members.length < 3 ? " team-grid--compact" : "") + '">' +
             members
               .map(function (person) {
                 var phoneHtml = person.phone
