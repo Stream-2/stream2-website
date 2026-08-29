@@ -91,24 +91,24 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 .site-footer .brand-logo { height: 72px; width: auto; perspective: none; }
 .site-footer .brand-logo img { height: 100%; width: auto; display: block; }
 
-/* nav: each link flips in 3D on hover, revealing a brand-blue duplicate */
+/* nav: text itself never rotates (a 3D-flipped glyph reads as blurry mid-turn) --
+   the motion lives in a lift + a underline that sweeps in from the center. */
 .main-nav { display: flex; align-items: center; gap: 8px; }
 .main-nav a {
   position: relative; display: inline-block; text-decoration: none;
   font-size: 0.95rem; font-weight: 500; color: var(--ink-soft); white-space: nowrap;
-  padding: 8px 8px; perspective: 400px;
+  padding: 8px 8px; transition: color 0.2s ease;
 }
-.main-nav a .flip { position: relative; display: block; transform-style: preserve-3d; transition: transform 0.45s cubic-bezier(0.2, 1, 0.3, 1); }
-.main-nav a .flip::before {
-  content: attr(data-label); position: absolute; inset: 0; transform: rotateX(90deg) translateY(9px);
-  transform-origin: bottom; color: var(--brand); font-weight: 600; backface-visibility: hidden;
-  opacity: 0; transition: opacity 0.15s ease;
+.main-nav a .nav-label { display: block; transition: transform 0.25s cubic-bezier(0.2, 1, 0.3, 1); }
+.main-nav a:hover { color: var(--brand); }
+.main-nav a:hover .nav-label { transform: translateY(-2px); }
+.main-nav a::after {
+  content: ""; position: absolute; left: 8px; right: 8px; bottom: 2px; height: 2px;
+  background: var(--accent-hotel); border-radius: 2px;
+  transform: scaleX(0); transform-origin: center; transition: transform 0.3s cubic-bezier(0.2, 1, 0.3, 1);
 }
-.main-nav a .flip span { display: block; backface-visibility: hidden; }
-.main-nav a:hover .flip { transform: rotateX(-90deg) translateY(-9px); }
-.main-nav a:hover .flip::before { opacity: 1; }
+.main-nav a:hover::after, .main-nav a[aria-current="page"]::after { transform: scaleX(1); }
 .main-nav a[aria-current="page"] { color: var(--brand); font-weight: 600; }
-.main-nav a[aria-current="page"]::after { content: ""; position: absolute; left: 8px; right: 8px; bottom: 2px; height: 2px; background: var(--accent-hotel); border-radius: 2px; }
 
 .header-actions { display: flex; align-items: center; gap: 14px; }
 .lang-switch a { font-size: 0.85rem; font-weight: 700; text-decoration: none; color: var(--ink-soft); padding: 4px 6px; }
@@ -126,7 +126,7 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 
 @media (prefers-reduced-motion: reduce) {
   .brand-logo .logo-spin { animation: none; }
-  .main-nav a .flip { transition: none; }
+  .main-nav a .nav-label, .main-nav a::after { transition: none; }
   .header-actions .btn-primary { transition: none; transform: none !important; }
 }
 
